@@ -1,0 +1,28 @@
+active: true
+rsp: FOOBAR123
+tag: bg
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+043B
+  - U+0445
+  - U+044E
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--90aarf0cxb8bc
+      variantTLDAllocatability: ["bg","uk","und-Cyrl"]
+      variants: []
+    - label: xn--90afz3eh
+      variantTLDAllocatability: ["be","bg","uk","und-Cyrl"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----8sbaaclj7m
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----gtba2db8a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----rlcrki7b5a4d
+    # Contains Extended CP
+    - xn--e1avmg5cz

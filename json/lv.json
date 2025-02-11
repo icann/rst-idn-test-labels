@@ -1,0 +1,40 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+0113",
+      "U+0123",
+      "U+0157"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "lv",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--znngb-n3a32a",
+            "variantTLDAllocatability" : [
+               "lv"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--xrg-eqa5isg",
+            "variantTLDAllocatability" : [
+               "lv",
+               "und-Latn"
+            ],
+            "variants" : []
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn---bug-bva12b",
+         "xn--vjs--dva91a",
+         "xn--f--orw-o3a0rsl",
+         "xn--hco-3qa5fq93az"
+      ]
+   },
+   "version" : "1.0"
+}

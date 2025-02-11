@@ -1,0 +1,68 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+1785",
+      "U+178E",
+      "U+17A2"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "und-Khmr",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--i2eicp0gulzdb",
+            "variantTLDAllocatability" : [
+               "und-Khmr"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--i2e2ad2c3hwg",
+            "variantTLDAllocatability" : [
+               "und-Khmr"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--i2eul7cwhwg",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         },
+         {
+            "label" : "xn--1-qvjmlji4i2ohebd",
+            "variantTLDAllocatability" : [
+               "und-Khmr"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--i2eiihh8gvnwdbd0o",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--i2eiih6a2dwqwdbd0o",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----rvjfn2e6as1d8jc3u2a0d",
+         "xn----vwjpe2m4b2c",
+         "xn-----nqodwd5r8a7ifu",
+         "xn--12ebq5a2h8g",
+         "xn--i2e2adaa6e0jmibb",
+         "xn--i2e1aybd8kzgb",
+         "xn--i2ea2da7cm1mcc0qqd",
+         "xn--m2e6ak0omauk",
+         "xn--12exu9d3d",
+         "xn--i2eof5dj90aqbb",
+         "xn--w2ef1ax7a5fya4n",
+         "xn--3-qvj7cbz1xtb0k"
+      ]
+   },
+   "version" : "1.0"
+}

@@ -1,0 +1,26 @@
+active: true
+rsp: FOOBAR123
+tag: und-Geor
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+10D9
+  - U+10E5
+  - U+10EF
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--modu0asm
+      variantTLDAllocatability: ["und-Geor"]
+      variants: []
+    - label: xn--modebg7cxd3a
+      variantTLDAllocatability: ["und-Geor"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----32glbuw
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----y2g4awbw3e
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----9hk5a9ark5az

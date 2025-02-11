@@ -1,0 +1,28 @@
+active: true
+rsp: FOOBAR123
+tag: bs
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0061
+  - U+0107
+  - U+0111
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--upq-qpab8a
+      variantTLDAllocatability: ["bs","und-Latn"]
+      variants: []
+    - label: xn--utzy-3ua39brg
+      variantTLDAllocatability: ["bs","sv","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---xxt-mta2b
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--rtss--hxa74f
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--r--qzwrw-jbbf
+    # Contains codepoint not in the repertoire
+    - xn--wwaz-ltab5b2a785p

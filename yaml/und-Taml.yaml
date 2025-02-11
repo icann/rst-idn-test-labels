@@ -1,0 +1,54 @@
+active: true
+rsp: FOOBAR123
+tag: und-Taml
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+eppSafeCodePoints:
+  - U+0B93
+  - U+0BA9
+  - U+0BB5
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--vkc6aa4hvgc
+      variantTLDAllocatability: ["und-Taml"]
+      variants: []
+    - label: xn--blc8cds0c4cwb
+      variantTLDAllocatability: ["und-Taml"]
+      variants:
+        - label: xn--8kc2ddkk9cudzb
+          variantTLDAllocatability: []
+    #Has an allocatable variant
+    - label: xn--clc8cflg9bs5hb
+      variantTLDAllocatability: ["und-Taml"]
+      variants:
+        - label: xn--clc8cflq7as5hb
+          variantTLDAllocatability: ["und-Taml"]
+    #Has two blocked and one allocatable variants
+    - label: xn--hlck5cgaz5ezc6ale
+      variantTLDAllocatability: ["und-Taml"]
+      variants:
+        - label: xn--hlck5cga1b7c3c6ale
+          variantTLDAllocatability: ["und-Taml"]
+        - label: xn--hlck5cgaey5f2bya6ce
+          variantTLDAllocatability: []
+        - label: xn--hlck5cgae2b3d4bya6ce
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----7weur9m
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----eweo3ga3a7dua3i
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----w5g5e8b4a4pj
+    # WLE 1, 2: H must be preceded by C
+    - xn--xkc2fla7kbc
+    # WLE 1, 2: M must be preceded by C
+    - xn--wkc3azfa7dua6f
+    # WLE 3 , X cannot be preceded by X
+    - xn--tkcah0mzg
+    # WLE 4: Two representations of ‘Shri’ cannot be mixed in the same label
+    - xn--3lcaqff0cd5dzbf
+    # labels with leading combining marks are invalid
+    - xn--clcj1eay8cq2h

@@ -1,0 +1,51 @@
+active: true
+rsp: FOOBAR123
+tag: ar
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+eppSafeCodePoints:
+  - U+0621
+  - U+0635
+  - U+0646
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--ggbm4g6e
+      variantTLDAllocatability: ["ar","und-Arab"]
+      variants: []
+      # This has one allocatable variant
+    - label: xn--jgbbt7aza6d5n
+      variantTLDAllocatability: ["ar","und-Arab"]
+      variants:
+        # this is allocatable
+        - label: xn--kgbmzu5c3a2t
+          variantTLDAllocatability: ["ar","und-Arab"]
+      #This is same pair as above one but in the blocked direction
+    - label: xn--kgbmzu5c3a2t
+      variantTLDAllocatability: ["ar","und-Arab"]
+      variants:
+        # this is blocked
+        - label: xn--jgbbt7aza6d5n
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    #Out of repertoire character - Has 063B
+    - xn--sgbpfij2bs
+    # RFC 5891 restrictions on placement of U+002D (-) - Leading
+    - xn----nmcvxz5g
+    # RFC 5891 restrictions on placement of U+002D (-) - Lagging
+    - xn----8mcjamy5a1f
+    # RFC 5891 restrictions on placement of U+002D (-) - third and fourth position
+    - xn-----ntdkkm7bxg
+    # Language Mixing - a label/variant can only be written using characters from one of the 4 languages - Contains 06BA - An Urdu character alongwith other Arabic characters
+    - xn--ggbrduv4a3cwb19f
+    # Language Mixing - a label/variant can only be written using characters from one of the 4 languages - Contains 06CD - An Pashto character alongwith other Arabic characters
+    - xn--ngbhgvio8e74d
+    # Language Mixing - a label/variant can only be written using characters from one of the 4 languages - Contains 06F3 - An Persian character alongwith other Arabic characters
+    - xn--ggbri3czbr83j
+    # Leading Digit - Latin - RFC 5893 RTL labels cannot start with a digit
+    - xn--2-1mcm0b2e
+    # Leading Digit - Arabic - RFC 5893 RTL labels cannot start with a digit
+    - xn--wgbmg7bzi
+    # U+0649 ALEF MAKSURA must not be in initial or medial position
+    - xn--ngbic3ak2gyaz

@@ -1,0 +1,51 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+056D",
+      "U+057A",
+      "U+0581"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "und-Armn",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--39adc2eeuq",
+            "variantTLDAllocatability" : [
+               "und-Armn"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--z9anhtyn5c6c",
+            "variantTLDAllocatability" : [
+               "und-Armn"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--y9ag5bupo8as",
+            "variantTLDAllocatability" : [
+               "und-Armn"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--y9ag0ddlo8as",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----qbcd1ce3adk3d",
+         "xn----nbclffl9c7i",
+         "xn-----ecdd1bww9a",
+         "xn--09as0ad0b7aq935oz"
+      ]
+   },
+   "version" : "1.0"
+}

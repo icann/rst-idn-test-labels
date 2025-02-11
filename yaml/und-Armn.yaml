@@ -1,0 +1,34 @@
+active: true
+rsp: FOOBAR123
+tag: und-Armn
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+056D
+  - U+057A
+  - U+0581
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--39adc2eeuq
+      variantTLDAllocatability: ["und-Armn"]
+      variants: []
+    # this label does not have any variant
+    - label: xn--z9anhtyn5c6c
+      variantTLDAllocatability: ["und-Armn"]
+      variants: []
+    - label: xn--y9ag5bupo8as
+      variantTLDAllocatability: ["und-Armn"]
+      variants:
+        - label: xn--y9ag0ddlo8as
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----qbcd1ce3adk3d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----nbclffl9c7i
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----ecdd1bww9a
+    # Contains code point from outside the repertoire
+    - xn--09as0ad0b7aq935oz

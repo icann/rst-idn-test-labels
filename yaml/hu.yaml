@@ -1,0 +1,31 @@
+active: true
+rsp: FOOBAR123
+tag: hu
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0074
+  - U+0151
+  - U+0171
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--gatu-1ra62c
+      variantTLDAllocatability: ["hu","und-Latn"]
+      variants: []
+    - label: xn--zosfn-kua47f
+      variantTLDAllocatability: ["hu","und-Latn"]
+      variants: []
+    - label: xn--ohih-dpa2d
+      variantTLDAllocatability: ["es","hu","is","it","no","pt","sv","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---qgdmnd-cya
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--sewykd--90a3d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--hz--rxmh-f1b
+    # Contains out of repertoire code point
+    - xn--id-nja24c165e

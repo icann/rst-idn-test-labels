@@ -1,0 +1,28 @@
+active: true
+rsp: FOOBAR123
+tag: lv
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0113
+  - U+0123
+  - U+0157
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--znngb-n3a32a
+      variantTLDAllocatability: ["lv"]
+      variants: []
+    - label: xn--xrg-eqa5isg
+      variantTLDAllocatability: ["lv","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---bug-bva12b
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--vjs--dva91a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--f--orw-o3a0rsl
+    # Contains code point not in the repertoire
+    - xn--hco-3qa5fq93az

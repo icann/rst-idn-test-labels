@@ -1,0 +1,26 @@
+active: true
+rsp: FOOBAR123
+tag: sr-Cyrl
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+043D
+  - U+0443
+  - U+045B
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--m1aavp
+      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","ru","bs-Cyrl","be","bg","mk"]
+      variants: []
+    - label: xn--c1a1aig9h
+      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","bs-Cyrl","mk"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----btbf8byb
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----7sbd2a6bc2j
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----rlcrsz3b6k

@@ -1,0 +1,28 @@
+active: true
+rsp: FOOBAR123
+tag: cnr-Cyrl
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0430
+  - U+0442
+  - U+045F
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--h1a5a8bn
+      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","ru","bs-Cyrl"]
+      variants: []
+    - label: xn--f1aisa4b0g
+      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","bs-Cyrl","mk"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----8sb2c5a8era
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----ctbjw5p
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----jlcp2c3i
+    # Contains Out of repertoire character
+    - xn--g1akbj0c193cz

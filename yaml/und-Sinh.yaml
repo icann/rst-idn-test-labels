@@ -1,0 +1,45 @@
+active: true
+rsp: FOOBAR123
+tag: und-Sinh
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+eppSafeCodePoints:
+  - U+0D8C
+  - U+0DA7
+  - U+0DB0
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--fzcf8dwd6i
+      variantTLDAllocatability: ["und-Sinh"]
+      variants: []
+    - label: xn--v0ck1c
+      variantTLDAllocatability: ["und-Sinh"]
+      variants:
+        - label: xn--vzc4f
+          variantTLDAllocatability: []
+    - label: xn--nzc2gfhh4a8d5d
+      variantTLDAllocatability: ["und-Sinh"]
+      variants:
+        - label: xn--nzc8b7chji7htd
+          variantTLDAllocatability: []
+        - label: xn--nzc8a4ehh4a8d5d
+          variantTLDAllocatability: []
+        - label: xn--nzc8ap8gji7htd
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----lpfi9f9d6j
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----mpff4ntau6bh5k8d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----yfig4s6bwb0kua
+    # WLE 1: Halanta/Virama must be preceded by C
+    - xn--gzcd1b6gtau6bh5kg0i
+    # WLE 2: Matra must be preceded by C or J
+    - xn--qzc4d0b4ga0n
+    # WLE 3: Visarga must be preceded by V, C or M
+    - xn--fzcbb8g1dj1wna
+    # WLE 4: Anusvara (Bindu) must be preceded by V, C, J or M
+    - xn--fzcb1l9a8b7e9cd

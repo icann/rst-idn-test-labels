@@ -1,0 +1,45 @@
+active: true
+rsp: FOOBAR123
+tag: und-Deva
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0915
+  - U+097B
+  - U+0912
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--11b4cm
+      variantTLDAllocatability: ["hi","und-Deva"]
+      variants: []
+    - label: xn--11b4aya5ed
+      variantTLDAllocatability: ["hi","und-Deva"]
+      variants:
+        - label: xn--11b4aya7dje
+          variantTLDAllocatability: []
+    - label: xn--r2bi0b7q
+      variantTLDAllocatability: ["und-Deva"]
+      variants:
+        - label: xn--r2bi4ah61a
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----pvd0ajd7fq
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----svdap4a9bd9ie
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----tnfa8f0ark3jvg
+    # leading combining mark
+    - xn--g2bjvd3ebd
+    # WLE 1: Rule for Nukta which restricts its preceding characters
+    - xn--61ba5eb2cxdza
+    # WLE 2, 3: Halant or matra characters can only be preceded by consonant or a Nukta which is preceded by a consonant
+    - xn--v1bm3en6bh8c6f0p
+    # WLE 4, 5, 6: Anusvara, Candrabindu or Visarga characters can only be preceded by either vowel or consonant or Nukta or matra
+    - xn----ptd2dkma7gyizcf2d
+    # Section 7, WLE 7: A vowel is not allowed to follow an H
+    - xn--n1bc2bya8erb1gqf
+    # restrictions on mixing digits
+    - xn--1-rudk0hcd7dvbzjzkz

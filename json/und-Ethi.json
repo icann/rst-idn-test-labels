@@ -1,0 +1,63 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+122E",
+      "U+1242",
+      "U+131C"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "und-Ethi",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--ixd1oxgthrz",
+            "variantTLDAllocatability" : [
+               "und-Ethi"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--8zd7a1c1tsord",
+            "variantTLDAllocatability" : [
+               "und-Ethi"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--8zd7a1c1t2p5b",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         },
+         {
+            "label" : "xn--5xd8av8nyjum8m",
+            "variantTLDAllocatability" : [
+               "und-Ethi"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--5xdq0a2ppjum8m",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--5xdc3e5hyjum8m",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--5xdcv2u8ium8m",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----dph0b5c2m3e",
+         "xn----qrh6g1l3e5cvo7l",
+         "xn-----0ll8h7mme5az"
+      ]
+   },
+   "version" : "1.0"
+}

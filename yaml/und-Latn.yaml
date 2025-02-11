@@ -1,0 +1,52 @@
+active: true
+rsp: FOOBAR123
+tag: und-Latn
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+eppSafeCodePoints:
+  - U+016D
+  - U+01EF
+  - U+1EF5
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--g-gga3etswnv7bq72iina
+      variantTLDAllocatability: ["und-Latn"]
+      variants: []
+    - label: xn--hello-p4a
+      variantTLDAllocatability: ["und-Latn"]
+      variants:
+        - label: helilo
+          variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","iu-Cans","lt","lv","no","pl","pt","sv","und-Latn"]
+        - label: xn--hell-xpa1b
+          variantTLDAllocatability: []
+        - label: xn--hello-1sa
+          variantTLDAllocatability: []
+        - label: xn--hell-7paz
+          variantTLDAllocatability: []
+        - label: xn--hello-eta
+          variantTLDAllocatability: []
+        - label: xn--hell-tqa48a
+          variantTLDAllocatability: []
+        - label: xn--hell-tqa65t
+          variantTLDAllocatability: []
+        - label: xn--hello-6nc
+          variantTLDAllocatability: []
+        - label: xn--hell-tqa0496b
+          variantTLDAllocatability: []
+        - label: xn--hello-g81b
+          variantTLDAllocatability: []
+        - label: xn--helil-4ta
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----pma9d33cw05hkcays
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--w--qna1xlhyi92by21mqoa
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--c--z-55a2w8x03a897p
+    # Violates "surrounded-by-L" rule
+    - xn--l-gda81a5i9mol344o
+    # labels with one L sharing two middle dots are invalid
+    - xn--ml-0eab5tt2b2gq0cmem331a

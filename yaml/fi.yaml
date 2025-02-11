@@ -1,0 +1,28 @@
+active: true
+rsp: FOOBAR123
+tag: fi
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0072
+  - U+00E3
+  - U+00E5
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--lhuq-joai5j
+      variantTLDAllocatability: ["fi","no","und-Latn"]
+      variants: []
+    - label: ugthahk
+      variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---ds-olah
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--cuzy--draa5m
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--r--fwmnpl-l2a
+    # Contains Extended-Cp code point
+    - xn--ndlyo-zqamc5q

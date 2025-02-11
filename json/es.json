@@ -1,0 +1,192 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+00E1",
+      "U+00E9",
+      "U+00F1"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "mayallocatevar",
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "es",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--mysterymnor-r7a",
+            "variantTLDAllocatability" : [
+               "es",
+               "fi",
+               "hu",
+               "is",
+               "no",
+               "pt",
+               "sv",
+               "und-Latn"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--airllpack-3pa",
+            "variantTLDAllocatability" : [
+               "es",
+               "und-Latn"
+            ],
+            "variants" : [
+               {
+                  "label" : "airl-lpack",
+                  "variantTLDAllocatability" : [
+                     "bs",
+                     "da",
+                     "de",
+                     "en",
+                     "es",
+                     "fi",
+                     "fr",
+                     "hu",
+                     "is",
+                     "it",
+                     "lt",
+                     "lv",
+                     "no",
+                     "pl",
+                     "pt",
+                     "sv",
+                     "und-Latn"
+                  ]
+               }
+            ]
+         },
+         {
+            "label" : "shell-land",
+            "variantTLDAllocatability" : [
+               "bs",
+               "da",
+               "de",
+               "en",
+               "es",
+               "fi",
+               "fr",
+               "hu",
+               "is",
+               "it",
+               "lt",
+               "lv",
+               "no",
+               "pl",
+               "pt",
+               "sv",
+               "und-Latn"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--shellland-4pa",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         },
+         {
+            "label" : "ul-lvl-lw",
+            "variantTLDAllocatability" : [
+               "bs",
+               "da",
+               "de",
+               "en",
+               "es",
+               "fi",
+               "fr",
+               "hu",
+               "is",
+               "it",
+               "lt",
+               "lv",
+               "no",
+               "pl",
+               "pt",
+               "sv",
+               "und-Latn"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--ul-lvllw-loa",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--ullvl-lw-hoa",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--ullvllw-wmad",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         },
+         {
+            "label" : "xn--ullvllw-wmad",
+            "variantTLDAllocatability" : [
+               "bs",
+               "da",
+               "de",
+               "en",
+               "es",
+               "fi",
+               "fr",
+               "hu",
+               "is",
+               "it",
+               "lt",
+               "lv",
+               "no",
+               "pl",
+               "pt",
+               "sv",
+               "und-Latn"
+            ],
+            "variants" : [
+               {
+                  "label" : "ul-lvl-lw",
+                  "variantTLDAllocatability" : [
+                     "bs",
+                     "da",
+                     "de",
+                     "en",
+                     "es",
+                     "fi",
+                     "fr",
+                     "hu",
+                     "is",
+                     "it",
+                     "lt",
+                     "lv",
+                     "no",
+                     "pl",
+                     "pt",
+                     "sv",
+                     "und-Latn"
+                  ]
+               },
+               {
+                  "label" : "xn--ul-lvllw-loa",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--ullvl-lw-hoa",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn---robrt-eva6f",
+         "xn--mnila--pta",
+         "xn--sp--sh-sta0h9a",
+         "xn--locpc-fuabb",
+         "xn--shawn-tja",
+         "jfl·l·é",
+         "xn--carlos-rtm"
+      ]
+   },
+   "version" : "1.0"
+}

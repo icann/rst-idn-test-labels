@@ -1,0 +1,49 @@
+active: true
+rsp: FOOBAR123
+tag: und-Grek
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+eppSafeCodePoints:
+  - U+03B8
+  - U+03BD
+  - U+03C6
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--wxacbc2ccce
+      variantTLDAllocatability: ["und-Grek"]
+      variants: []
+    - label: xn--pxaaver1d
+      variantTLDAllocatability: ["und-Grek"]
+      variants:
+        - label: xn--pxaaver1g
+          variantTLDAllocatability: []
+    - label: xn--kxakmghz9bwa
+      variantTLDAllocatability: ["und-Grek"]
+      variants:
+        - label: xn--owa6emghz9bwa
+          variantTLDAllocatability: []
+        - label: xn--owa6emghz9b8c
+          variantTLDAllocatability: []
+        - label: xn--kxakmghz9b8c
+          variantTLDAllocatability: []
+        - label: xn--pxaibehz9bwa
+          variantTLDAllocatability: ["und-Grek"]
+        - label: xn--pxaibehz9b8c
+          variantTLDAllocatability: []
+        - label: xn--pxaiegv2btg
+          variantTLDAllocatability: []
+        - label: xn--pxaiegv2bza7a
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----5lbfyg8d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----0lbdej7dwb
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----g9bq2epg
+    # Contains code point not in the script
+    - xn--pxaiekznvj723j
+    # Contains code-point from the same script but not in the repertoire
+    - xn--pxankvbl4d

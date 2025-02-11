@@ -1,0 +1,50 @@
+active: true
+rsp: FOOBAR123
+tag: und-Guru
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0A1D
+  - U+0A1E
+  - U+0A2F
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--f9bk0etbb
+      variantTLDAllocatability: ["und-Guru"]
+      variants: []
+    - label: xn--09bm8eb
+      variantTLDAllocatability: ["und-Guru"]
+      variants:
+        - label: xn--09bm7do
+          variantTLDAllocatability: []
+        - label: xn--09bm6dr
+          variantTLDAllocatability: []
+        - label: xn--09bm6db
+          variantTLDAllocatability: []
+    # this label does not have any variant
+    - label: xn--d9b6eraf3l
+      variantTLDAllocatability: ["und-Guru"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----l9di2a7irb1ftfwh
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----zbea4abwc4ad8je
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----p9f6hk1fse6n
+    # RFC 5891 restrictions on placement of combining marks &#x235F;
+    - xn--u9by0bg7v
+    # N: must be preceded by C1
+    - xn--e9b4a3drk
+    # H: must be preceded by C or N and followed by C2
+    - xn--49bdb6dsc
+    # M: must be preceded by C or N
+    - xn--t8bh9d2ap6lj9g
+    # Bindi must be preceded by specific V or M
+    - xn--t8bat1f9eoc
+    # Tippi must be preceded by C, N or specific V or M
+    - xn--08b1azaef58b
+    # Addak must be preceded by C, N or specific V or M and followed by C3
+    - xn--d9be9era4cj45aaz

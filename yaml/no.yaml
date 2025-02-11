@@ -1,0 +1,30 @@
+active: true
+rsp: FOOBAR123
+tag: 'no'
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+00EA
+  - U+00F3
+  - U+00F8
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--iydvt-3sa6ak
+      variantTLDAllocatability: ["it","no","und-Latn"]
+      variants: []
+    - label: xn--sj-6iai1c1a
+      variantTLDAllocatability: ["no","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---ldo-sqaf
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--amvc--praxm
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--gp--ql-7wah9b
+    # Contains extended-cp code point
+    - xn--ycfd-1oaqw
+    # Contains out of repertoire code-point
+    - xn--dndvo-0qa2du17a

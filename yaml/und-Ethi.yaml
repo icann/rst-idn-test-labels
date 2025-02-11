@@ -1,0 +1,37 @@
+active: true
+rsp: FOOBAR123
+tag: und-Ethi
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+122E
+  - U+1242
+  - U+131C
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--ixd1oxgthrz
+      variantTLDAllocatability: ["und-Ethi"]
+      variants: []
+    - label: xn--8zd7a1c1tsord
+      variantTLDAllocatability: ["und-Ethi"]
+      variants:
+        - label: xn--8zd7a1c1t2p5b
+          variantTLDAllocatability: []
+    - label: xn--5xd8av8nyjum8m
+      variantTLDAllocatability: ["und-Ethi"]
+      variants:
+        - label: xn--5xdq0a2ppjum8m
+          variantTLDAllocatability: []
+        - label: xn--5xdc3e5hyjum8m
+          variantTLDAllocatability: []
+        - label: xn--5xdcv2u8ium8m
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----dph0b5c2m3e
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----qrh6g1l3e5cvo7l
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----0ll8h7mme5az

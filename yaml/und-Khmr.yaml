@@ -1,0 +1,53 @@
+active: true
+rsp: FOOBAR123
+tag: und-Khmr
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+1785
+  - U+178E
+  - U+17A2
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--i2eicp0gulzdb
+      variantTLDAllocatability: ["und-Khmr"]
+      variants: []
+    - label: xn--i2e2ad2c3hwg
+      variantTLDAllocatability: ["und-Khmr"]
+      variants:
+        - label: xn--i2eul7cwhwg
+          variantTLDAllocatability: []
+    - label: xn--1-qvjmlji4i2ohebd
+      variantTLDAllocatability: ["und-Khmr"]
+      variants:
+        - label: xn--i2eiihh8gvnwdbd0o
+          variantTLDAllocatability: []
+        - label: xn--i2eiih6a2dwqwdbd0o
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----rvjfn2e6as1d8jc3u2a0d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----vwjpe2m4b2c
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----nqodwd5r8a7ifu
+    # allowable subscript consonant sequence
+    - xn--12ebq5a2h8g
+    # more than two subscript consonants
+    - xn--i2e2adaa6e0jmibb
+    # subscript RO must be last in a syllable
+    - xn--i2e1aybd8kzgb
+    # U+17D2 and its surrounding code points
+    - xn--i2ea2da7cm1mcc0qqd
+    # make sure that dependent vowel follows a consonant or a shifter or a robat
+    - xn--m2e6ak0omauk
+    # checks if U+17C7 KHMER SIGN REAHMUK follows a consonant or a dependent vowel-2 or a shifter
+    - xn--12exu9d3d
+    # checks if U+17CB KHMER SIGN BANTOC code point follows a series-three consonant
+    - xn--i2eof5dj90aqbb
+    # checks if U+17CD KHMER SIGN TOANDAKHIAT follows a consonant or U+17B7 KHMER VOWEL SIGN I (Dependent-vowel-3)
+    - xn--w2ef1ax7a5fya4n
+    # restrictions on mixing digits
+    - xn--3-qvj7cbz1xtb0k

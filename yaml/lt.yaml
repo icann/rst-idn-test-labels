@@ -1,0 +1,28 @@
+active: true
+rsp: FOOBAR123
+tag: lt
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0117
+  - U+012F
+  - U+0173
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--kdnt-bza
+      variantTLDAllocatability: ["lt","und-Latn"]
+      variants: []
+    - label: xn--zhyvv-f4a06azh
+      variantTLDAllocatability: ["lt","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---yebw-zgb
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--kdfad--l4a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--p--u-gua8euh
+    # Contains out of repertoire code-point
+    - xn--avdci-93a49bwc9112a

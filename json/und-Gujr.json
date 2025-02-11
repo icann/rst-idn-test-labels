@@ -1,0 +1,48 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+0A90",
+      "U+0AA0",
+      "U+0AB2"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "und-Gujr",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--gect7atgh",
+            "variantTLDAllocatability" : [
+               "und-Gujr"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--hdc1e4ahxs7bcd5l",
+            "variantTLDAllocatability" : [
+               "und-Gujr"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--hdc1e4a0ap1bbd1ktl",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----nie0ajd7fq",
+         "xn----0ge3e5b2bt6b4d",
+         "xn-----5lgi4c2d5cd3k",
+         "xn--udcm9bybl4eo5j",
+         "xn--ndcn0h1a5bk3g",
+         "xn--hdcf5gqbkcf5i1f",
+         "xn--2-uge2c3dtb2b0c0fpa5x",
+         "xn--hdc2ezao6a2bcz"
+      ]
+   },
+   "version" : "1.0"
+}

@@ -1,0 +1,87 @@
+active: true
+rsp: FOOBAR123
+tag: und-Hani
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar", "allblockvar"]
+eppSafeCodePoints:
+  - U+4E67
+  - U+526F
+  - U+6652
+testLabels:
+  allocatableLabels:
+    - label: xn--6krtnh7fstq
+      variantTLDAllocatability: ["zh","und-Hani"]
+      variants:
+        - label: xn--6krtnh5jd1l
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--6kr82gw0m2oi
+          variantTLDAllocatability: ["zh","und-Hani"]
+      variants:
+        - label: xn--6kry7jcvj2wi
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--6kr82gw0m1h0a
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--6kry7jcvj170a
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--6kr82gw0mk35a
+          variantTLDAllocatability: ["zh","und-Hani"]
+      variants:
+        - label: xn--6kry7jcvjk66a
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--6kr82gw0m408c
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--6kry7jcvj4y0d
+          variantTLDAllocatability: []
+    - label: xn--xkrr14b3b439b
+      variantTLDAllocatability: ["zh","und-Hani"]
+      variants:
+        - label: xn--xkrr14b3bu62v
+          variantTLDAllocatability: []
+        - label: xn--xkrr14b3b813v
+          variantTLDAllocatability: []
+        - label: xn--xkrr14bihgz3l
+          variantTLDAllocatability: []
+        - label: xn--xkrr14bkmodqv
+          variantTLDAllocatability: []
+        - label: xn--xkrr14bkmoctv
+          variantTLDAllocatability: []
+        - label: xn--5ltz4r3b439b
+          variantTLDAllocatability: []
+        - label: xn--5ltz4r3bu62v
+          variantTLDAllocatability: []
+        - label: xn--5ltz4r3b813v
+          variantTLDAllocatability: []
+        - label: xn--5ltz4rimhz3l
+          variantTLDAllocatability: []
+        - label: xn--5ltz4rk6qdqv
+          variantTLDAllocatability: []
+        - label: xn--5ltz4rk6qctv
+          variantTLDAllocatability: []
+        - label: xn--efvtbz81bjox
+          variantTLDAllocatability: []
+        - label: xn--efvtb306lt2k
+          variantTLDAllocatability: []
+        - label: xn--efvtb306ls5k
+          variantTLDAllocatability: ["zh","und-Hani"]
+        - label: xn--efvv3qbujtsk
+          variantTLDAllocatability: []
+        - label: xn--efv915bovhtwm
+          variantTLDAllocatability: []
+        - label: xn--efv915bovhszm
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----2c5by4n9p4cifi
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----j09at9gd0hj94e4ua
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Second and Fourth Position
+    - xn-----lz4cv56jrxbhu2a1ub
+    # Contains code point from outside the repertoire
+    - xn--7ga7617bkge347a6yccsp

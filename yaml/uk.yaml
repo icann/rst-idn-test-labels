@@ -1,0 +1,28 @@
+active: true
+rsp: FOOBAR123
+tag: uk
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0430
+  - U+043B
+  - U+0457
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--c1a2byab
+      variantTLDAllocatability: ["uk","be","bg"]
+      variants: []
+    - label: xn--i1ade6e
+      variantTLDAllocatability: ["uk","be","bg"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----ntbre8f3a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----itbc9aj1jj
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----9kc0d6al6g
+    # Contains Extended CP
+    - xn--g1al1bhdbb

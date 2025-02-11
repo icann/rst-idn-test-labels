@@ -1,0 +1,47 @@
+active: true
+rsp: FOOBAR123
+tag: und-Bali
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+1B0C
+  - U+1B2B
+  - U+1B2C
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--9sfmq5iza
+      variantTLDAllocatability: ["und-Bali"]
+      variants: []
+    - label: xn--9sfgmw8b5gog
+      variantTLDAllocatability: ["und-Bali"]
+      variants:
+        - label: xn--9sfgm0a3byhog
+          variantTLDAllocatability: []
+    - label: xn--btffs2an7b
+      variantTLDAllocatability: ["und-Bali"]
+      variants:
+        - label: xn--btffs2an7e
+          variantTLDAllocatability: []
+        - label: xn--btffs2as1b
+          variantTLDAllocatability: []
+        - label: xn--btffs2as1e
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----hdljmm5dzf6bxj
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----7cl3a6a9h
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----fwqbd4ans3c1s
+    # WLE Rule 1: 1B44 cannot be at the first position.
+    - xn--btfhhh5lfp3ob
+    # 1B44 cannot follow a sign including itself.
+    - xn--gtf5dak9ha
+    # 1B44 cannot follow a dependent vowel.
+    - xn--dtf2aas3fwc4e
+    # 1B44 cannot follow two consecutive consonants to prevent below 2-base stacking.
+    - xn--btfbp9gxbyahd2mb
+    # Dependent vowel, except 1B35, must follow a consonant or an independent vowel.
+    - xn--9sfxo4fsbt9a

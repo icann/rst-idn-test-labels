@@ -1,0 +1,90 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+0070",
+      "U+00DF",
+      "U+00E4"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "mayallocatevar",
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "de",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "nihnr",
+            "variantTLDAllocatability" : [
+               "bs",
+               "da",
+               "de",
+               "en",
+               "es",
+               "fi",
+               "fr",
+               "hu",
+               "is",
+               "it",
+               "lt",
+               "lv",
+               "no",
+               "pl",
+               "pt",
+               "sv",
+               "und-Latn"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--rsgm-yna",
+            "variantTLDAllocatability" : [
+               "de",
+               "und-Latn"
+            ],
+            "variants" : [
+               {
+                  "label" : "rsgmss",
+                  "variantTLDAllocatability" : [
+                     "de",
+                     "und-Latn"
+                  ]
+               }
+            ]
+         },
+         {
+            "label" : "xn--zoqussw-2va",
+            "variantTLDAllocatability" : [
+               "de",
+               "und-Latn"
+            ],
+            "variants" : [
+               {
+                  "label" : "zoqssussw",
+                  "variantTLDAllocatability" : [
+                     "de",
+                     "und-Latn"
+                  ]
+               },
+               {
+                  "label" : "xn--zoqssuw-5va",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--zoquw-nqab",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn---jaqvu-6ya",
+         "xn--bdqax--6ya",
+         "xn--be--gxg-t2a",
+         "xn--bxsutm-1ua",
+         "xn--bxsutm-us2j"
+      ]
+   },
+   "version" : "1.0"
+}

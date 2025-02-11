@@ -1,0 +1,28 @@
+active: true
+rsp: FOOBAR123
+tag: sv
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0067
+  - U+00E0
+  - U+00F8
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--sr-6jal
+      variantTLDAllocatability: ["sv"]
+      variants: []
+    - label: xn--tiqu-uoai
+      variantTLDAllocatability: ["sv"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----6faao3b
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--kj--ela9ha
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--oj--m-qram4j
+    # Contains Extended CP
+    - xn--jzn-tma0b51b

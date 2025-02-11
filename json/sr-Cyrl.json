@@ -1,0 +1,49 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+043D",
+      "U+0443",
+      "U+045B"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "sr-Cyrl",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--m1aavp",
+            "variantTLDAllocatability" : [
+               "sr-Cyrl",
+               "cnr-Cyrl",
+               "und-Cyrl",
+               "ru",
+               "bs-Cyrl",
+               "be",
+               "bg",
+               "mk"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--c1a1aig9h",
+            "variantTLDAllocatability" : [
+               "sr-Cyrl",
+               "cnr-Cyrl",
+               "und-Cyrl",
+               "bs-Cyrl",
+               "mk"
+            ],
+            "variants" : []
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----btbf8byb",
+         "xn----7sbd2a6bc2j",
+         "xn-----rlcrsz3b6k"
+      ]
+   },
+   "version" : "1.0"
+}

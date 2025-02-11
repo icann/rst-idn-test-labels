@@ -1,0 +1,105 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+016D",
+      "U+01EF",
+      "U+1EF5"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "mayallocatevar",
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "und-Latn",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--g-gga3etswnv7bq72iina",
+            "variantTLDAllocatability" : [
+               "und-Latn"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--hello-p4a",
+            "variantTLDAllocatability" : [
+               "und-Latn"
+            ],
+            "variants" : [
+               {
+                  "label" : "helilo",
+                  "variantTLDAllocatability" : [
+                     "bs",
+                     "da",
+                     "de",
+                     "en",
+                     "es",
+                     "fi",
+                     "fr",
+                     "hu",
+                     "is",
+                     "it",
+                     "iu-Cans",
+                     "lt",
+                     "lv",
+                     "no",
+                     "pl",
+                     "pt",
+                     "sv",
+                     "und-Latn"
+                  ]
+               },
+               {
+                  "label" : "xn--hell-xpa1b",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hello-1sa",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hell-7paz",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hello-eta",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hell-tqa48a",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hell-tqa65t",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hello-6nc",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hell-tqa0496b",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hello-g81b",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--helil-4ta",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----pma9d33cw05hkcays",
+         "xn--w--qna1xlhyi92by21mqoa",
+         "xn--c--z-55a2w8x03a897p",
+         "xn--l-gda81a5i9mol344o",
+         "xn--ml-0eab5tt2b2gq0cmem331a"
+      ]
+   },
+   "version" : "1.0"
+}

@@ -1,0 +1,171 @@
+active: true
+rsp: FOOBAR123
+tag: und-Jpan
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+3006
+  - U+3058
+  - U+30C5
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--djrs72d6uy
+      variantTLDAllocatability: ["ja","und-Jpan","und-Kore","zh","und-Hani"]
+      variants: []
+    - label: xn--n8jtcwd2e
+      variantTLDAllocatability: ["ja","und-Japn"]
+      variants:
+        - label: xn--n8jtc5hpk
+          variantTLDAllocatability: []
+    - label: xn--7ckg4g3a9f253soh9c
+      variantTLDAllocatability: ["ja","und-Japn"]
+      variants:
+        - label: xn--7ckg4g3a2694aba8463e
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694aba2663e
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694aba4498k
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694aba2798k
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694ahznhy2c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694ahznvy2c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694ahzn232i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694ahznv42i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694au0nvw2c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694au0n9w2c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694au0nh22i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694au0n922i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694afnvvl0b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694afnv9l0b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694afnvh36g
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a2694afnv936g
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694aeznjy2c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694aeznxy2c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694aezn432i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694aeznx42i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967bba1404c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967bba5504c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967bba7339i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967bba5639i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967boba0736a
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967bobaz836a
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967boba1099e
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967bobaz299e
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967b8whvx6b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967b8wh9x6b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967b8whhn3i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a4967b8wh9n3i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694ar0nxw2c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694ar0ncx2c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694ar0nj22i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694ar0nc32i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a5967blbax988a
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a5967blbax098a
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a5967blbax355f
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a5967blbax555f
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a0377bba5893c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a0377bba9993c
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a0377bba1829i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a0377bba9039i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a0377bvvhvx6b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a0377bvvh9x6b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a0377bvvhhn3i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a0377bvvh9n3i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694acnvxl0b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694acnvcm0b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694acnvj36g
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a3694acnvc46g
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a5967b5whxx6b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a5967b5whcy6b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a5967b5whjn3i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a5967b5whco3i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a1377bsvhxx6b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a1377bsvhcy6b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a1377bsvhjn3i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a1377bsvhco3i
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a9974cba0013b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a9974cba4113b
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a9974cba6938h
+          variantTLDAllocatability: []
+        - label: xn--7ckg4g3a9974cba4248h
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----5eutc1gya
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----geuzc8b0kxd
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----bk4awepdj
+    # No small kana, iteration mark or prolonged sound mark may start a label or word - small kana
+    - xn--fcktdteg
+    # No small kana, iteration mark or prolonged sound mark may start a label or word
+    - xn--1dka2bb5f
+    # ideographic zero follows only a kanji numeral
+    - xn--w6jxkreydpfnho850afp8e
+    # Katakana middle dot is only used between Japanese characters, and not following itself
+    - xn--pckwb0fta0ga
+    # hyphen-minus not allowed adjacent to Japanese characters
+    - xn----39tsikfb1fvg2a
+    # repeated-mark
+    - xn--yck0enbxbe7175bcu4bu8xdz

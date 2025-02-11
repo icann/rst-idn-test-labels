@@ -1,0 +1,85 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+0B93",
+      "U+0BA9",
+      "U+0BB5"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "mayallocatevar",
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "und-Taml",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--vkc6aa4hvgc",
+            "variantTLDAllocatability" : [
+               "und-Taml"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--blc8cds0c4cwb",
+            "variantTLDAllocatability" : [
+               "und-Taml"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--8kc2ddkk9cudzb",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         },
+         {
+            "label" : "xn--clc8cflg9bs5hb",
+            "variantTLDAllocatability" : [
+               "und-Taml"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--clc8cflq7as5hb",
+                  "variantTLDAllocatability" : [
+                     "und-Taml"
+                  ]
+               }
+            ]
+         },
+         {
+            "label" : "xn--hlck5cgaz5ezc6ale",
+            "variantTLDAllocatability" : [
+               "und-Taml"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--hlck5cga1b7c3c6ale",
+                  "variantTLDAllocatability" : [
+                     "und-Taml"
+                  ]
+               },
+               {
+                  "label" : "xn--hlck5cgaey5f2bya6ce",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--hlck5cgae2b3d4bya6ce",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----7weur9m",
+         "xn----eweo3ga3a7dua3i",
+         "xn-----w5g5e8b4a4pj",
+         "xn--xkc2fla7kbc",
+         "xn--wkc3azfa7dua6f",
+         "xn--tkcah0mzg",
+         "xn--3lcaqff0cd5dzbf",
+         "xn--clcj1eay8cq2h"
+      ]
+   },
+   "version" : "1.0"
+}

@@ -1,0 +1,30 @@
+active: true
+rsp: FOOBAR123
+tag: pt
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0074
+  - U+00E3
+  - U+00F5
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--yod-llac0i
+      variantTLDAllocatability: ["pt","und-Latn"]
+      variants: []
+    - label: xn--vis-kladzu8f
+      variantTLDAllocatability: ["pt","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---flena-7ta6l
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--cp--mla3g2a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn----qlbnx-3wa9c9f
+    # Contains Extended CP
+    - xn--a-sfah6esb
+    # Contains code point not in the repertoire
+    - xn--3cam8at139sz

@@ -1,0 +1,38 @@
+active: true
+rsp: FOOBAR123
+tag: iu-Cans
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+11AB0
+  - U+1431
+  - U+14C2
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--4ee23drcz0wsa
+      variantTLDAllocatability: ["iu-Cans"]
+      variants: []
+    - label: xn--iee5y7b4s9u
+      variantTLDAllocatability: ["iu-Cans"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----zoi6f9cutngs464o
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----tfi6j32ccg5869l
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----3mmz4ba97e0ab60c
+    # violation of "leading-final-mark" rule - initial leading mark
+    - xn--dee7bwa96fsehl8v
+    # violation of "leading-final-mark" rule - leading mark followed by leading mark
+    - xn--vje6ruewbva6etcv2i
+    # violation of "leading-final-mark" rule - hyphen
+    - xn----riib05b6es7c1b55g
+    # violation of leading-1550 rule
+    - xn--6ce7qpg2g7vxd
+    # violation of leading 1595 rule
+    - xn--cee8omi4d78ahc
+    # violation of leading 1595 or 1596 rule
+    - xn--ceeo0wod7a8jn5do1v

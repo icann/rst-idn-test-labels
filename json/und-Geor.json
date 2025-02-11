@@ -1,0 +1,38 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+10D9",
+      "U+10E5",
+      "U+10EF"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "und-Geor",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--modu0asm",
+            "variantTLDAllocatability" : [
+               "und-Geor"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--modebg7cxd3a",
+            "variantTLDAllocatability" : [
+               "und-Geor"
+            ],
+            "variants" : []
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----32glbuw",
+         "xn----y2g4awbw3e",
+         "xn-----9hk5a9ark5az"
+      ]
+   },
+   "version" : "1.0"
+}

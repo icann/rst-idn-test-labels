@@ -1,0 +1,69 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+0D05",
+      "U+0D17",
+      "U+0D2B"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "rsp" : "FOOBAR123",
+   "tag" : "und-Mlym",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--qwca3c0br5d",
+            "variantTLDAllocatability" : [
+               "und-Mlyn"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--uwcvag5j",
+            "variantTLDAllocatability" : [
+               "und-Mlyn"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--uwcvag",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         },
+         {
+            "label" : "xn--7vc6d0dpi",
+            "variantTLDAllocatability" : [
+               "und-Mlyn"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--7vc8b1a8h",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--7vc6d5k",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----gkfay8m",
+         "xn----8hfi2mob6k",
+         "xn-----s3h8ja8h9g",
+         "xn--rvcyzaa7i4dwed13b",
+         "xn--rvc1e9au8b4c",
+         "xn--uwcnic6dc7gg8924bra",
+         "xn--rvcb2ie6p",
+         "xn--rvc3fvdtjb",
+         "xn--rvc9f3a7w",
+         "xn--5wcaaa",
+         "xn--3wcaaa",
+         "xn--2wc2dxg",
+         "xn--3wcaa"
+      ]
+   },
+   "version" : "1.0"
+}

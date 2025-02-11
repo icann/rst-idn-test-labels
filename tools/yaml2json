@@ -1,0 +1,106 @@
+#!/usr/bin/env perl
+use Getopt::Long;
+use Cwd qw(abs_path);
+use Data::Mirror qw(mirror_json);
+use File::Basename qw(basename);
+use File::Copy;
+use File::Slurp;
+use File::Spec;
+use JSON::Schema::Modern;
+use JSON::XS;
+use YAML::XS;
+use constant SCHEMA_URL_BASE => q{https://icann.github.io/rst/api-spec/schema/};
+use common::sense;
+
+$YAML::XS::Boolean = q{JSON::PP};
+
+my $help;
+GetOptions('help|h' => \$help);
+
+if ($help) {
+    undef $/;
+    say <DATA>;
+    exit;
+}
+
+my $src_dir = abs_path(shift(@ARGV) || q{.});
+my $dst_dir = abs_path(shift(@ARGV) || $src_dir);
+
+my $spec = mirror_json(q{https://icann.github.io/rst-api-spec/rst-api-spec.json});
+
+#
+# munge the regexp for items in eppSafeCodePoints until the API spec is updated:
+#
+$spec->{components}->{schemas}->{idnTableRequest}->{properties}->{eppSafeCodePoints}->{items}->{pattern} = '^U\+[0-9A-Fa-f]+$';
+
+munge_schema_uris($spec);
+
+my $js = JSON::Schema::Modern->new;
+foreach my $name (keys(%{$spec->{components}->{schemas}})) {
+    my $uri = SCHEMA_URL_BASE . $name;
+    $js->add_schema($uri => $spec->{components}->{schemas}->{$name});
+}
+
+my @files = sort grep { /\.yaml$/ } map { File::Spec->catfile($src_dir, $_) } read_dir($src_dir);
+
+my $json = JSON::XS->new->canonical->pretty->utf8;
+
+foreach my $file (@files) {
+	my $table;
+    eval { $table = YAML::XS::LoadFile($file) };
+
+    if (ref($table) ne q{HASH}) {
+        chomp($@);
+        printf(STDERR "%s: YAML parse error (%s)\n", basename($file), $@);
+
+    } else {
+        $table->{version} = "".$table->{version};
+
+        my $result = $js->evaluate($table, SCHEMA_URL_BASE . q{idnTableRequest});
+        if (!$result->valid) {
+            foreach my $error ($result->errors) {
+                printf(STDERR "%s: %s: %s\n", basename($file), $error->instance_location, $error->error);
+            }
+
+        } else {
+            # write JSON file
+            write_file(File::Spec->catfile($dst_dir, $table->{tag}.q{.json}), $json->encode($table));
+
+            # copy YAML file
+            copy($file, File::Spec->catfile($dst_dir, $table->{tag}.q{.yaml}));
+
+            printf(STDERR "%s: OK\n", basename($file));
+        }
+    }
+}
+
+#
+# recursively convert the URIs found in $ref properties to a global URI
+#
+sub munge_schema_uris {
+    my $ref = shift;
+    if (q{ARRAY} eq ref($ref)) {
+        map { munge_schema_uris($_) } grep { ref($_) } @{$ref};
+
+    } elsif (q{HASH} eq ref($ref)) {
+        foreach my $key (keys(%{$ref})) {
+            if (q{$ref} eq $key) {
+                $ref->{$key} = SCHEMA_URL_BASE . basename($ref->{$key});
+
+            } elsif (ref($ref->{$key})) {
+                munge_schema_uris($ref->{$key});
+
+            }
+        }
+    }
+}
+
+__DATA__
+Usage: labels.pl [SRC_DIR [DST_DIR]]
+
+This script converts RST v2.0 IDN test label files from YAML to JSON. SRC_DIR
+is where the YAML files can be found, DST_DIR is where the JSON files will be
+written.
+
+If SRC_DIR is not specified, then the current working directory is used. If
+DST_DIR is not specified, then SRC_DIR will be used.
