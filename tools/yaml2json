@@ -9,7 +9,7 @@ use File::Spec;
 use JSON::Schema::Modern;
 use JSON::XS;
 use YAML::XS;
-use constant SCHEMA_URL_BASE => q{https://icann.github.io/rst/api-spec/schema/};
+use constant SCHEMA_URL_BASE => q{https://icann.github.io/rst-api-spec/schema/};
 use common::sense;
 
 $YAML::XS::Boolean = q{JSON::PP};
@@ -33,29 +33,48 @@ my $spec = mirror_json(q{https://icann.github.io/rst-api-spec/rst-api-spec.json}
 #
 $spec->{components}->{schemas}->{idnTableRequest}->{properties}->{eppSafeCodePoints}->{items}->{pattern} = '^U\+[0-9A-Fa-f]+$';
 
+#
+# munge internal refs to global ones, as JSON::Schema::Modern doesn't like
+# fragment URIs like #/components/schemas/foobar
+#
 munge_schema_uris($spec);
 
+#
+# set up a JSON::Schema::Modern validator
+#
 my $js = JSON::Schema::Modern->new;
 foreach my $name (keys(%{$spec->{components}->{schemas}})) {
     my $uri = SCHEMA_URL_BASE . $name;
     $js->add_schema($uri => $spec->{components}->{schemas}->{$name});
 }
 
+#
+# generate a list of YAML files from the source directory to be converted:
+#
 my @files = sort grep { /\.yaml$/ } map { File::Spec->catfile($src_dir, $_) } read_dir($src_dir);
 
 my $json = JSON::XS->new->canonical->pretty->utf8;
 
 foreach my $file (@files) {
 	my $table;
-    eval { $table = YAML::XS::LoadFile($file) };
 
+    #
+    # try parsing the YAML
+    #
+    eval { $table = YAML::XS::LoadFile($file) };
     if (ref($table) ne q{HASH}) {
         chomp($@);
         printf(STDERR "%s: YAML parse error (%s)\n", basename($file), $@);
 
     } else {
+        #
+        # coerce to string
+        #
         $table->{version} = "".$table->{version};
 
+        #
+        # try validating against the idnTableRequest schema:
+        #
         my $result = $js->evaluate($table, SCHEMA_URL_BASE . q{idnTableRequest});
         if (!$result->valid) {
             foreach my $error ($result->errors) {
