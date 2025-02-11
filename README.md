@@ -18,6 +18,20 @@ be used to do so.
 The JSON files conform to the structure of the `idnTableRequest` schema which
 is described further in the [RST-API
 specification](https://icann.github.io/rst-api-spec/rst-api-spec.html).
+Therefore, a new IDN table object can be created in the API using `curl` as
+follows:
+
+```
+curl \
+    --key path_to_key.key \
+    --cert path_to_cert.crt \
+    --header "content-type: application/json"
+    --data-binary "@table.json"
+    https://rst-api-ote.icann.org/v1/table
+```
+
+Replace `table.json` with the appropriate file name for the table you want to
+create.
 
 ## Note on Second-Level Reference LGRs versus "custom" LGRs
 

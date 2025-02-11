@@ -9,7 +9,6 @@
    "permittedVariantPolicies" : [
       "allblockvar"
    ],
-   "rsp" : "FOOBAR123",
    "tag" : "lt",
    "testLabels" : {
       "allocatableLabels" : [

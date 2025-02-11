@@ -10,7 +10,6 @@
       "mayallocatevar",
       "allblockvar"
    ],
-   "rsp" : "FOOBAR123",
    "tag" : "und-Hani",
    "testLabels" : {
       "allocatableLabels" : [
