@@ -45,3 +45,6 @@ repository are not useful for testing custom LGR implementations.
 # License
 
 Copyright 2025, Internet Corporation for Assigned Names and Numbers (ICANN).
+
+The files in this repository are published under the "Creative Commons
+Attribution 4.0 International" license. See [LICENSE](LICENSE) for more details.
