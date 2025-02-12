@@ -1,4 +1,5 @@
 #!/usr/bin/env perl
+# Copyright 2025, Internet Corporation for Assigned Names and Numbers (ICANN).
 use Getopt::Long;
 use Cwd qw(abs_path);
 use Data::Mirror qw(mirror_json);
@@ -27,11 +28,6 @@ my $src_dir = abs_path(shift(@ARGV) || q{.});
 my $dst_dir = abs_path(shift(@ARGV) || $src_dir);
 
 my $spec = mirror_json(q{https://icann.github.io/rst-api-spec/rst-api-spec.json});
-
-#
-# munge the regexp for items in eppSafeCodePoints until the API spec is updated:
-#
-$spec->{components}->{schemas}->{idnTableRequest}->{properties}->{eppSafeCodePoints}->{items}->{pattern} = '^U\+[0-9A-Fa-f]+$';
 
 #
 # munge internal refs to global ones, as JSON::Schema::Modern doesn't like
