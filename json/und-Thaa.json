@@ -1,0 +1,76 @@
+{
+   "active" : true,
+   "eppSafeCodePoints" : [
+      "U+0789 U+07A8",
+      "U+0790 U+07AB",
+      "U+07A4 U+07AD"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "allblockvar"
+   ],
+   "tag" : "und-Thaa",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--rqbrh4erbh",
+            "variantTLDAllocatability" : [
+               "und-Thaa"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--crbilr",
+            "variantTLDAllocatability" : [
+               "und-Thaa"
+            ],
+            "variants" : [
+               {
+                  "label" : "xn--oqb9byar",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--crbkir",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--xqb0blr",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--oqbr0era",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--xqb2bir",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--drbglr",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--oqb1cvar",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--drbiir",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn----k7c9btt1bw",
+         "xn----77cjc0be0e",
+         "xn-----8pezx2b",
+         "xn--jqbdh6l",
+         "xn--2-16c5fa9bkt",
+         "xn--jqb0a7btt1bw",
+         "xn--jqbaa3a7bn8j8bk",
+         "xn--0qb2axnk",
+         "xn--brbdglj1bz"
+      ]
+   },
+   "version" : "1.0"
+}
