@@ -45,8 +45,9 @@ For production tests of registry systems that use "custom" LGRs, ICANN will
 create custom test files that will be used instead. Therefore, the files in this
 repository are not useful for testing custom LGR implementations.
 
-Once created, test subjects are free to copy the IDN table objects created by
-ICANN into the OT&E system for testing in that environment.
+Once created, test subjects are free to copy IDN table objects created by
+ICANN for custom IDN tables into the OT&E system for testing in that
+environment.
 
 ## See Also
 
