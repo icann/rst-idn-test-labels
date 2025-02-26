@@ -11,16 +11,17 @@ Guidelines](https://www.icann.org/resources/pages/implementation-guidelines-2012
 by gTLD registries implementing the [Second-Level Reference Label Generation
 Rules](https://www.icann.org/resources/pages/second-level-lgr-2015-06-21-en).
 
-During production RSTs, creation and configuration of RST test objects will be
-performed by ICANN org. In the [OT&E
+During production test, creation and configuration of RST test objects (and
+any associated IDN table objects) will be performed by ICANN org. In the [OT&E
 environment](https://www.icann.org/resources/registry-system-testing-v2.0/#ote-environment),
 test subjects must create their own IDN table objects (via the [RST v2.0 REST
-API](https://icann.github.io/rst-api-spec/)). The files in this repository may
-be used to do so.
+API](https://icann.github.io/rst-api-spec/)) which can then be associated with
+their tests. The files in this repository may be used to do so.
 
-The JSON files conform to the structure of the `idnTableRequest` schema which
-is described further in the [RST-API
+The [JSON files](./json) conform to the structure of the `idnTableRequest`
+schema which is described further in the [RST-API
 specification](https://icann.github.io/rst-api-spec/rst-api-spec.html).
+
 Therefore, a new IDN table object can be created in the API using `curl` as
 follows:
 
@@ -28,21 +29,24 @@ follows:
 curl \
     --cert path_to_key_and_cert.pem \
     --header "content-type: application/json"
-    --data-binary "@table.json"
+    --data-binary "@json/table.json"
     https://rst-api-ote.icann.org/v1/table
 ```
 
-Replace `table.json` with the appropriate file name for the table you want to
-create.
+Replace `json/table.json` with the appropriate file name for the table you want
+to create.
 
 ## Note on Second-Level Reference LGRs versus "custom" LGRs
 
 The test data in these files was developed to allow testing of gTLD registry
 systems that use the Second-Level Reference LGRs published by ICANN.
 
-For production RSTs of registry systems that use "custom" LGRs, ICANN will
+For production tests of registry systems that use "custom" LGRs, ICANN will
 create custom test files that will be used instead. Therefore, the files in this
 repository are not useful for testing custom LGR implementations.
+
+Once created, test subjects are free to copy the IDN table objects created by
+ICANN into the OT&E system for testing in that environment.
 
 ## See Also
 
