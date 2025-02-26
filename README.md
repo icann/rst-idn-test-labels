@@ -41,6 +41,13 @@ For production RSTs of registry systems that use "custom" LGRs, ICANN will
 create custom test files that will be used instead. Therefore, the files in this
 repository are not useful for testing custom LGR implementations.
 
+## See Also
+
+* [RST Test Specifications](https://icann.github.io/rst-test-specs/)
+  ([GitHub repository](https://github.com/icann/rst-test-specs))
+* [RST API Specification](https://icann.github.io/rst-api-spec)
+  ([GitHub repository](https://github.com/icann/rst-api-spec))
+
 # License
 
 Copyright 2025, Internet Corporation for Assigned Names and Numbers (ICANN).
