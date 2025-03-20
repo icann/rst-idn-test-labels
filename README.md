@@ -28,8 +28,8 @@ follows:
 ```
 curl \
     --cert path_to_key_and_cert.pem \
-    --header "content-type: application/json"
-    --data-binary "@json/table.json"
+    --header "content-type: application/json" \
+    --data-binary "@json/table.json" \
     https://rst-api-ote.icann.org/v1/table
 ```
 
