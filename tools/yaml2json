@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# Copyright 2025, Internet Corporation for Assigned Names and Numbers (ICANN).
+# Copyright 2025 Internet Corporation for Assigned Names and Numbers (ICANN).
 use Getopt::Long;
 use Cwd qw(abs_path);
 use Data::Mirror qw(mirror_json);
@@ -10,7 +10,10 @@ use File::Spec;
 use JSON::Schema::Modern;
 use JSON::XS;
 use YAML::XS;
-use constant SCHEMA_URL_BASE => q{https://icann.github.io/rst-api-spec/schema/};
+use constant {
+    API_SPEC_URL    => q{https://github.com/icann/rst-api-spec/releases/download/v2025.01/rst-api-spec.json},
+    SCHEMA_URL_BASE => q{https://icann.github.io/rst-api-spec/schema/},
+};
 use common::sense;
 
 $YAML::XS::Boolean = q{JSON::PP};
@@ -27,7 +30,7 @@ if ($help) {
 my $src_dir = abs_path(shift(@ARGV) || q{.});
 my $dst_dir = abs_path(shift(@ARGV) || $src_dir);
 
-my $spec = mirror_json(q{https://icann.github.io/rst-api-spec/rst-api-spec.json});
+my $spec = mirror_json(API_SPEC_URL);
 
 #
 # munge internal refs to global ones, as JSON::Schema::Modern doesn't like
