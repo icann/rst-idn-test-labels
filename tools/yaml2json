@@ -10,10 +10,7 @@ use File::Spec;
 use JSON::Schema::Modern;
 use JSON::XS;
 use YAML::XS;
-use constant {
-    API_SPEC_URL    => q{https://github.com/icann/rst-api-spec/releases/download/v2025.01/rst-api-spec.json},
-    SCHEMA_URL_BASE => q{https://icann.github.io/rst-api-spec/schema/},
-};
+use constant SCHEMA_URL_BASE => q{https://icann.github.io/rst-api-spec/schema/};
 use common::sense;
 
 $YAML::XS::Boolean = q{JSON::PP};
@@ -30,7 +27,13 @@ if ($help) {
 my $src_dir = abs_path(shift(@ARGV) || q{.});
 my $dst_dir = abs_path(shift(@ARGV) || $src_dir);
 
-my $spec = mirror_json(API_SPEC_URL);
+my $release = mirror_json(q{https://api.github.com/repos/icann/rst-api-spec/releases/latest});
+
+printf(STDERR "Note: files will be validated against the schema in API spec %s\n", $release->{name});
+
+my $asset = [ grep { q{rst-api-spec.json} eq $_->{name} } @{$release->{assets}} ]->[0];
+
+my $spec = mirror_json($asset->{browser_download_url});
 
 #
 # munge internal refs to global ones, as JSON::Schema::Modern doesn't like
