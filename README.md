@@ -49,6 +49,30 @@ Once created, test subjects are free to copy IDN table objects created by
 ICANN for custom IDN tables into the OT&E system for testing in that
 environment.
 
+# Releasing a new version
+
+1. The YAML files are provided by the IDN Team. When a new set of files are
+   provided, specify their location by creating a `.env` file in the
+   repository's root directory:
+
+   ```
+   SRC_DIR="/path/to/yaml/files"
+   ```
+2. Run `make`. This will validate the YAML files, copy them to the `yaml/`
+   directory, and write the JSON versions to the `json/` directory.
+3. Commit the files, and tag them with a tag of the form `vN.N.N`, following
+   [Semantic Versioning](https://semver.org).
+4. Create a new
+   [release](https://github.com/icann/rst-idn-test-labels/releases/new)
+   using the tag.
+
+Since the [RST test specs](https://github.com/icann/rst-test-specs) includes a
+[resource](https://icann.github.io/rst-test-specs/rst-test-specs.html#Resource-idn.testLabelsForOTE)
+that links to the test labels, every time a new version of the test labels is
+released, a [new version of the test
+specs](https://github.com/icann/rst-test-specs?tab=readme-ov-file#releasing-a-new-version)
+must also be released, in order to incorporate the new URL.
+
 ## See Also
 
 * [RST Test Specifications](https://icann.github.io/rst-test-specs/)
