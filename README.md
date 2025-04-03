@@ -66,7 +66,7 @@ environment.
 5. Create a new
    [release](https://github.com/icann/rst-idn-test-labels/releases/new) using
    the tag.
-6. Updated the note at the top of this file.
+6. Update the note at the top of this file.
 
 Since the [RST test specs](https://github.com/icann/rst-test-specs) includes a
 [resource](https://icann.github.io/rst-test-specs/rst-test-specs.html#Resource-idn.testLabelsForOTE)
