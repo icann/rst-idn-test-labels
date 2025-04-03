@@ -62,7 +62,10 @@ environment.
    directory, and write the JSON versions to the `json/` directory.
 3. Commit the files, and tag them with a tag of the form `vN.N.N`, following
    [Semantic Versioning](https://semver.org).
-4. Push the tag to GitHub.
+4. Push the tag to GitHub using `git push --tags`.
+3. Create a new
+   [release](https://github.com/icann/rst-idn-test-labels/releases/new) using
+   the tag.
 
 Since the [RST test specs](https://github.com/icann/rst-test-specs) includes a
 [resource](https://icann.github.io/rst-test-specs/rst-test-specs.html#Resource-idn.testLabelsForOTE)
