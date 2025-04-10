@@ -1,3 +1,4 @@
+active: true
 tag: und-Arab
 version: 1.0
 isReferenceLGR: true
@@ -54,17 +55,20 @@ testLabels:
       variants:
         - label: xn--ngbwfhe0h
           variantTLDAllocatability: ["ar","und-Arab"]
-    # Three blocked variants
-    - label: xn--ogbfzx4c01c
+    # Four blocked variants
+    - label: xn--mgbne7f
       variantTLDAllocatability: ["ar","und-Arab"]
       variants:
-        - label: xn--ogbah8a2a5d
+        - label: xn--hgbxe7f
           variantTLDAllocatability: []
       variants:
-        - label: xn--rgbqr4b85bb
+        - label: xn--igbve7f
           variantTLDAllocatability: []
       variants:
-        - label: xn--ogbfzw5cy1c
+        - label: xn--kgbre7f
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--tgbc6dvj
           variantTLDAllocatability: []
     # Two blocked and one allocatable variant
     - label: xn--hgbmsbq7a3j

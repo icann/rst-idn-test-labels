@@ -1,3 +1,4 @@
+active: true
 tag: iu-Cans
 version: 1.0
 isReferenceLGR: true
@@ -9,12 +10,18 @@ eppSafeCodePoints:
 testLabels:
   allocatableLabels:
     # this label does not have any variant
-    - label: xn--4ee23drcz0wsa
+    - label: xn--4ee23drc0348jsa
       variantTLDAllocatability: ["iu-Cans"]
       variants: []
     - label: xn--iee5y7b4s9u
       variantTLDAllocatability: ["iu-Cans"]
       variants: []
+    # this label has one blocked variant
+    - label: xn--0cem22iuc
+      variantTLDAllocatability: ["iu-Cans"]
+      variants:
+        - label: xn--h-sfis28m
+          variantTLDAllocatability: []
   unallocatableLabels:
     # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
     - xn----zoi6f9cutngs464o

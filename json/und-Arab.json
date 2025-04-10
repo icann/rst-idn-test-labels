@@ -1,4 +1,5 @@
 {
+   "active" : true,
    "eppSafeCodePoints" : [
       "U+0689",
       "U+0693",
@@ -111,14 +112,14 @@
             ]
          },
          {
-            "label" : "xn--ogbfzx4c01c",
+            "label" : "xn--mgbne7f",
             "variantTLDAllocatability" : [
                "ar",
                "und-Arab"
             ],
             "variants" : [
                {
-                  "label" : "xn--ogbfzw5cy1c",
+                  "label" : "xn--tgbc6dvj",
                   "variantTLDAllocatability" : []
                }
             ]
