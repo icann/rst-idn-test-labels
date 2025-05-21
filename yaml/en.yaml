@@ -1,7 +1,7 @@
 tag: en
 version: 1.0
 isReferenceLGR: true
-permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+permittedVariantPolicies: ["allblockvar"]
 eppSafeCodePoints:
   - U+0067
   - U+0071
@@ -25,4 +25,4 @@ testLabels:
     # Contains code points not part of the repertoire
     - xn--mvqry-cra
     # Contains extended-cp code point
-    - xntõhzkcpz
+    - xn--nave-6pa
