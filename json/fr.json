@@ -1,0 +1,74 @@
+{
+   "eppSafeCodePoints" : [
+      "U+006A",
+      "U+00E6",
+      "U+0153"
+   ],
+   "isReferenceLGR" : true,
+   "permittedVariantPolicies" : [
+      "mayallocatevar",
+      "allblockvar"
+   ],
+   "tag" : "fr",
+   "testLabels" : {
+      "allocatableLabels" : [
+         {
+            "label" : "xn--jhv-eya",
+            "variantTLDAllocatability" : [
+               "fr"
+            ],
+            "variants" : []
+         },
+         {
+            "label" : "xn--gtaq-xoa96d",
+            "variantTLDAllocatability" : [],
+            "variants" : [
+               {
+                  "label" : "xn--gtq-bla4a21d",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         },
+         {
+            "label" : "xn--sbm-0la0b",
+            "variantTLDAllocatability" : [],
+            "variants" : [
+               {
+                  "label" : "xn--isbm-yoa",
+                  "variantTLDAllocatability" : [
+                     "fr"
+                  ]
+               }
+            ]
+         },
+         {
+            "label" : "xn--byxqrjh-h3a",
+            "variantTLDAllocatability" : [
+               "fr"
+            ],
+            "variants" : [
+               {
+                  "label" : "byxqrjyh",
+                  "variantTLDAllocatability" : [
+                     "fr"
+                  ]
+               },
+               {
+                  "label" : "xn--bxqrjh-pzae",
+                  "variantTLDAllocatability" : []
+               },
+               {
+                  "label" : "xn--bxqrjyh-c3a",
+                  "variantTLDAllocatability" : []
+               }
+            ]
+         }
+      ],
+      "unallocatableLabels" : [
+         "xn---phqm-sra",
+         "xn--ftqgzj--qxa",
+         "xn--q--rpt-ihbz"
+      ]
+   },
+   "version" : "1.0"
+}
