@@ -27,14 +27,14 @@ testLabels:
         - label: xn--jgbbt7aza6d5n
           variantTLDAllocatability: []
   unallocatableLabels:
-    #Out of repertoire character - Has 063B
-    - xn--sgbpfij2bs
     # RFC 5891 restrictions on placement of U+002D (-) - Leading
     - xn----nmcvxz5g
     # RFC 5891 restrictions on placement of U+002D (-) - Lagging
     - xn----8mcjamy5a1f
     # RFC 5891 restrictions on placement of U+002D (-) - third and fourth position
     - xn-----ntdkkm7bxg
+    #Out of repertoire character - Has 063B
+    - xn--sgbpfij2bs
     # Language Mixing - a label/variant can only be written using characters from one of the 4 languages - Contains 06BA - An Urdu character alongwith other Arabic characters
     - xn--ggbrduv4a3cwb19f
     # Language Mixing - a label/variant can only be written using characters from one of the 4 languages - Contains 06CD - An Pashto character alongwith other Arabic characters
