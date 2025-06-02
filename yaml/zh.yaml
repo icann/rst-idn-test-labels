@@ -18,8 +18,6 @@ testLabels:
       variants:
         - label: xn--h7kyv59xjjay27zeqa
           variantTLDAllocatability: ["zh","und-Hani"]
-        - label: xn--h7kyv59xjjay27zeqa
-          variantTLDAllocatability: []
         - label: xn--h7kyv59xjjat800au1b
           variantTLDAllocatability: []
         - label: xn--h7kyv59xjjao88zmcb
@@ -38,8 +36,6 @@ testLabels:
         - label: xn--h7k9t3h90nw6efpbo05d8jb
           variantTLDAllocatability: []
         - label: xn--h7k9t3h90nw6efpb108dba
-          variantTLDAllocatability: []
-        - label: xn--h7k9t3h90nw6efpb108dpuw
           variantTLDAllocatability: []
         - label: xn--h7k9t3h90nw6efpb108dpuw
           variantTLDAllocatability: []
@@ -62,6 +58,12 @@ testLabels:
         - label: xn--h7k9t3h90nw6efpbu31jba
           variantTLDAllocatability: ["zh","und-Hani"]
   unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----p5vu0aik33qm3fyub498jba
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----o5vp2at75aulaj494avsb
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----jh7axgqi85w8rgh5ak1m9y0r
     # Contains Hangul character
     - xn--qelu3jowevwco90t
     # Hyphen at the begining
