@@ -3,9 +3,9 @@ version: 1.0
 isReferenceLGR: true
 permittedVariantPolicies: ["allblockvar"]
 eppSafeCodePoints:
-  - U+4F8D
-  - U+59BE
-  - U+D2BF
+  - U+AC02
+  - U+B9D5
+  - U+C6F1
 testLabels:
   allocatableLabels:
     # this label does not have any variant
