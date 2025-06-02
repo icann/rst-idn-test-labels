@@ -29,11 +29,11 @@
          }
       ],
       "unallocatableLabels" : [
-         "xn--ui7al70b6kghpn41a159aeob89g",
-         "xn--38jv669apwnqpkfiaq0k",
          "xn----xh7ep3xjvd9y2ac4a",
          "xn----gc2f1nn17b39k",
-         "xn-----615it3zfpblhy8gt2a"
+         "xn-----615it3zfpblhy8gt2a",
+         "xn--ui7al70b6kghpn41a159aeob89g",
+         "xn--38jv669apwnqpkfiaq0k"
       ]
    },
    "version" : "1.0"
