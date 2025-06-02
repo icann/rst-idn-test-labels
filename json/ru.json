@@ -26,7 +26,9 @@
                "cnr-Cyrl",
                "und-Cyrl",
                "ru",
-               "bs-Cyrl"
+               "bs-Cyrl",
+               "bg",
+               "mk"
             ],
             "variants" : []
          }
