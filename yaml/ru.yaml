@@ -13,7 +13,7 @@ testLabels:
       variantTLDAllocatability: ["ru","und-Cyrl"]
       variants: []
     - label: xn--8-ntbcrf3c
-      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","ru","bs-Cyrl"]
+      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","ru","bs-Cyrl","bg","mk"]
       variants: []
   unallocatableLabels:
     # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
