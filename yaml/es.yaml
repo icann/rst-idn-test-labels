@@ -52,6 +52,6 @@ testLabels:
     # Violates "surrounded-by-L" rule
     - xn--shawn-tja
     # Labels with one L sharing two middle dots are invalid
-    - jfl·l·é
+    - xn--jfll-7hab46a
     # Contains code point outside the repertoire
     - xn--carlos-rtm
