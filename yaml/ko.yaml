@@ -15,13 +15,13 @@ testLabels:
       variantTLDAllocatability: ["ko","und-Kore"]
       variants: []
   unallocatableLabels:
-    # Contains Code Point not in the repertoire
-    - xn--ui7al70b6kghpn41a159aeob89g
-    # Contains Code Point not in the repertoire
-    - xn--38jv669apwnqpkfiaq0k
     # Hyphen at the begining
     - xn----xh7ep3xjvd9y2ac4a
     # Hyphen at the end
     - xn----gc2f1nn17b39k
     # Hyphen at 3rd and 4th position
     - xn-----615it3zfpblhy8gt2a
+    # Contains Code Point not in the repertoire
+    - xn--ui7al70b6kghpn41a159aeob89g
+    # Contains Code Point not in the repertoire
+    - xn--38jv669apwnqpkfiaq0k
