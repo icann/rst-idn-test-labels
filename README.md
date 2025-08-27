@@ -11,7 +11,7 @@ Guidelines](https://www.icann.org/resources/pages/implementation-guidelines-2012
 by gTLD registries implementing the [Second-Level Reference Label Generation
 Rules](https://www.icann.org/resources/pages/second-level-lgr-2015-06-21-en).
 
-During production test, creation and configuration of RST test objects (and
+During production tests, creation and configuration of RST test objects (and
 any associated IDN table objects) will be performed by ICANN org. In the [OT&E
 environment](https://www.icann.org/resources/registry-system-testing-v2.0/#ote-environment),
 test subjects must create their own IDN table objects (via the [RST v2.0 REST
