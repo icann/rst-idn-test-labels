@@ -48,9 +48,17 @@ munge_schema_uris($spec);
 # set up a JSON::Schema::Modern validator
 #
 my $js = JSON::Schema::Modern->new;
-foreach my $name (keys(%{$spec->{components}->{schemas}})) {
-    my $uri = SCHEMA_URL_BASE . $name;
-    $js->add_schema($uri => $spec->{components}->{schemas}->{$name});
+
+eval {
+    foreach my $name (keys(%{$spec->{components}->{schemas}})) {
+        my $uri = SCHEMA_URL_BASE . $name;
+        $js->add_schema($uri => $spec->{components}->{schemas}->{$name});
+    }
+};
+
+if (length $@ > 0) {
+    say STDERR q{Error loading schema: }.$@;
+    exit(1);
 }
 
 #
