@@ -91,23 +91,38 @@ foreach my $file (@files) {
         # try validating against the idnTableRequest schema:
         #
         my $result = $js->evaluate($table, SCHEMA_URL_BASE . q{idnTableRequest});
-
         if (!$result->valid) {
             foreach my $error ($result->errors) {
                 printf(STDERR "%s: %s: %s\n", basename($file), $error->instance_location, $error->error);
                 exit(1);
             }
+        }
 
-        } elsif (!is_language_tag($table->{tag})) {
+        #
+        # validate language tag
+        #
+        if (!is_language_tag($table->{tag})) {
                 printf(STDERR "%s: '%s' is not a valid language tag\n", basename($file), $table->{tag});
                 exit(1);
-
-        } else {
-            # write JSON file
-            write_file(File::Spec->catfile($dst_dir, $table->{tag}.q{.json}), $json->encode($table)) unless ($lint);
-
-            printf(STDERR "%s: OK\n", basename($file, q{.yaml}));
         }
+
+        #
+        # validate language tag(s) in variantTLDAllocatability propertie of the
+        # allocatable test labels
+        #
+        foreach my $label (@{$table->{testLabels}->{allocatableLabels}}) {
+            foreach my $tag (@{$label->{variantTLDAllocatability}}) {
+                if (!is_language_tag($tag)) {
+                    printf(STDERR "%s: in variantTLDAllocatability for the allocatable label '%s', '%s' is not a valid language tag\n", basename($file), $label->{label}, $tag);
+                    exit(1);
+                }
+            }
+        }
+
+        # write JSON file
+        write_file(File::Spec->catfile($dst_dir, $table->{tag}.q{.json}), $json->encode($table)) unless ($lint);
+
+        printf(STDERR "%s: OK\n", basename($file, q{.yaml}));
     }
 }
 
