@@ -32,11 +32,11 @@ follows:
 curl \
     --cert path_to_key_and_cert.pem \
     --header "content-type: application/json" \
-    --data-binary "@json/table.json" \
+    --data-binary "@table.json" \
     https://rst-api-ote.icann.org/v1/table
 ```
 
-Replace `json/table.json` with the appropriate file name for the table you want
+Replace `table.json` with the appropriate file name for the table you want
 to create.
 
 ## Note on Second-Level Reference LGRs versus "custom" LGRs
@@ -54,21 +54,14 @@ environment.
 
 # Releasing a new version
 
-1. The YAML files are provided by the IDN Team. When a new set of files are
-   provided, specify their location by creating a `.env` file in the
-   repository's root directory:
-
-   ```
-   SRC_DIR="/path/to/yaml/files"
-   ```
-2. Run `make`. This will validate the YAML files, copy them to the `yaml/`
-   directory, and write the JSON versions to the `json/` directory.
-3. Commit the files, and tag them with a tag of the form `vN.N.N`, following
-   [Semantic Versioning](https://semver.org).
+1. The YAML files are maintained by the IDN Team. When a new set of files are
+   provided, commit the files, and tag the repository with a tag of the form
+   `vN.N.N`, following [Semantic Versioning](https://semver.org).
 4. Push the tag to GitHub using `git push --tags`.
 5. Create a new
    [release](https://github.com/icann/rst-idn-test-labels/releases/new) using
-   the tag.
+   the tag. The [release workflow](.github/workflows/release.yaml) will generate
+   JSON versions and publish them as release assets.
 6. Update the note at the top of this file.
 
 Since the [RST test specs](https://github.com/icann/rst-test-specs) includes a
@@ -76,7 +69,7 @@ Since the [RST test specs](https://github.com/icann/rst-test-specs) includes a
 that links to the test labels, every time a new version of the test labels is
 released, a [new version of the test
 specs](https://github.com/icann/rst-test-specs?tab=readme-ov-file#releasing-a-new-version)
-must also be released, in order to incorporate the new URL.
+should also be released, in order to incorporate the new URL.
 
 ## See Also
 
