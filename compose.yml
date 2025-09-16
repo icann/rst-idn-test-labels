@@ -4,3 +4,7 @@ services:
     volumes:
       - .:/app
     command: make -C /app
+
+  lint:
+    extends: build
+    command: make -C /app lint
