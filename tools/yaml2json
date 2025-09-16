@@ -47,7 +47,7 @@ munge_schema_uris($spec);
 #
 # set up a JSON::Schema::Modern validator
 #
-my $js = JSON::Schema::Modern->new;
+my $js = JSON::Schema::Modern->new(validate_formats => 1);
 
 eval {
     foreach my $name (keys(%{$spec->{components}->{schemas}})) {
