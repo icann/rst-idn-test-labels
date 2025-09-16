@@ -42,21 +42,20 @@ to create.
 ## Note on Second-Level Reference LGRs versus "custom" LGRs
 
 The test data in these files was developed to allow testing of gTLD registry
-systems that use the Second-Level Reference LGRs published by ICANN.
+systems that use the Second-Level Reference LGRs.
 
 For production tests of registry systems that use "custom" LGRs, ICANN will
 create custom test files that will be used instead. Therefore, the files in this
 repository are not useful for testing custom LGR implementations.
 
-Once created, test subjects are free to copy IDN table objects created by
-ICANN for custom IDN tables into the OT&E system for testing in that
-environment.
+Once custom table objects have been created by ICANN, test subjects are free to
+use them in the OT&E environment for testing in that environment.
 
 # Releasing a new version
 
-1. The YAML files are maintained by the IDN Team. When a new set of files are
-   provided, commit the files, and tag the repository with a tag of the form
-   `vN.N.N`, following [Semantic Versioning](https://semver.org).
+1. The [YAML](yaml/) files are maintained by the IDN Team. When a new set of
+   files are provided, commit the files, and tag the repository with a tag of
+   the form `vN.N.N`, following [Semantic Versioning](https://semver.org).
 4. Push the tag to GitHub using `git push --tags`.
 5. Create a new
    [release](https://github.com/icann/rst-idn-test-labels/releases/new) using
