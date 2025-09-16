@@ -1,0 +1,6 @@
+services:
+  build:
+    build: .
+    volumes:
+      - .:/app
+    command: make -C /app
