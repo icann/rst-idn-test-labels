@@ -13,7 +13,7 @@ testLabels:
       variantTLDAllocatability: ["ko","und-Kore"]
       variants: []
     - label: xn--9d0bw1in6jjjdvu9a
-      variantTLDAllocatability: [""]
+      variantTLDAllocatability: []
       variants: []
     - label: xn--n9so2yxeo1d
       variantTLDAllocatability: ["und-Kore"]
