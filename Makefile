@@ -1,6 +1,10 @@
-# this .env file should contain SRC_DIR=/path/to/source/directory
-include .env
+all: json license
 
-all:
-	@tools/yaml2json $(SRC_DIR) ./json
-	@mv -fv ./json/*.yaml ./yaml/
+json:
+	@tools/yaml2json ./yaml ./json
+
+license:
+	@cp LICENSE ./json/
+
+clean:
+	@rm -rf ./json
