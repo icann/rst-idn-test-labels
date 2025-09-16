@@ -1,10 +1,12 @@
 # IDN test labels for RST v2.0
 
 > [!NOTE]
-> *The current release is [v1.0.3](https://github.com/icann/rst-idn-test-labels/releases/tag/v1.0.3).*
+> *The current release is
+> [v1.0.3](https://github.com/icann/rst-idn-test-labels/releases/tag/v1.0.3).*
 
 > [!WARNING]
-> *Looking for JSON files? They are now available from the [releases](https://github.com/icann/rst-idn-test-labels/releases) page.*
+> *Looking for JSON files? They are now available from the
+> [releases page](https://github.com/icann/rst-idn-test-labels/releases) page.*
 
 This repository generates JSON files representing test data for use in
 the [Registry System Testing (RST) v2.0
@@ -21,8 +23,10 @@ test subjects must create their own IDN table objects (via the [RST v2.0 REST
 API](https://icann.github.io/rst-api-spec/)) which can then be associated with
 their tests. The files in this repository may be used to do so.
 
-The [JSON files](./json) conform to the structure of the `idnTableRequest`
-schema which is described further in the [RST-API
+The JSON files published on the the [releases
+page](https://github.com/icann/rst-idn-test-labels/releases) conform
+to the structure of the `idnTableRequest` schema which is described further in
+the [RST-API
 specification](https://icann.github.io/rst-api-spec/rst-api-spec.html).
 
 Therefore, a new IDN table object can be created in the API using `curl` as
@@ -56,12 +60,12 @@ use them in the OT&E environment for testing in that environment.
 1. The [YAML files(yaml/) are maintained by the IDN Team. When a new set of
    files are provided, commit the files, and tag the repository with a tag of
    the form `vN.N.N`, following [Semantic Versioning](https://semver.org).
-4. Push the tag to GitHub using `git push --tags`.
-5. Create a new
+2. Push the tag to GitHub using `git push --tags`.
+3. Create a new
    [release](https://github.com/icann/rst-idn-test-labels/releases/new) using
    the tag. The [release workflow](.github/workflows/release.yaml) will generate
    JSON versions and publish them as release assets.
-6. Update the note at the top of this file.
+4. Update the note at the top of this file.
 
 Since the [RST test specs](https://github.com/icann/rst-test-specs) includes a
 [resource](https://icann.github.io/rst-test-specs/rst-test-specs.html#Resource-idn.testLabelsForOTE)
