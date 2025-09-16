@@ -60,6 +60,8 @@ my @files = sort grep { /\.yaml$/ } map { File::Spec->catfile($src_dir, $_) } re
 
 my $json = JSON::XS->new->canonical->pretty->utf8;
 
+my $errcount = 0;
+
 foreach my $file (@files) {
 	my $table;
 
@@ -84,6 +86,7 @@ foreach my $file (@files) {
         if (!$result->valid) {
             foreach my $error ($result->errors) {
                 printf(STDERR "%s: %s: %s\n", basename($file), $error->instance_location, $error->error);
+                $errcount++;
             }
 
         } else {
@@ -94,6 +97,8 @@ foreach my $file (@files) {
         }
     }
 }
+
+exit($errcount);
 
 #
 # recursively convert the URIs found in $ref properties to a global URI
