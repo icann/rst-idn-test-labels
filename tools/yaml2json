@@ -8,6 +8,7 @@ use File::Copy;
 use File::Path qw(make_path);
 use File::Slurp;
 use File::Spec;
+use I18N::LangTags qw(:ALL);
 use JSON::Schema::Modern;
 use JSON::XS;
 use YAML::XS;
@@ -75,9 +76,14 @@ foreach my $file (@files) {
     # try parsing the YAML
     #
     eval { $table = YAML::XS::LoadFile($file) };
+
     if (ref($table) ne q{HASH}) {
         chomp($@);
         printf(STDERR "%s: YAML parse error (%s)\n", basename($file), $@);
+
+    } elsif (!is_language_tag($table->{tag})) {
+        printf(STDERR "%s: '%s' is not a valid language tag\n", basename($file), $table->{tag});
+        exit(1);
 
     } else {
         #
