@@ -53,7 +53,7 @@ use them in the OT&E environment for testing in that environment.
 
 # Releasing a new version
 
-1. The [YAML](yaml/) files are maintained by the IDN Team. When a new set of
+1. The [YAML files(yaml/) are maintained by the IDN Team. When a new set of
    files are provided, commit the files, and tag the repository with a tag of
    the form `vN.N.N`, following [Semantic Versioning](https://semver.org).
 4. Push the tag to GitHub using `git push --tags`.
