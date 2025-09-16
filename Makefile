@@ -1,6 +1,11 @@
-# this .env file should contain SRC_DIR=/path/to/source/directory
-include .env
+all: zip
 
-all:
-	@tools/yaml2json $(SRC_DIR) ./json
-	@mv -fv ./json/*.yaml ./yaml/
+zip: json
+	@cp -v LICENSE ./json/
+	@zip -j rst-idn-test-labels.zip json/*
+
+json:
+	@tools/yaml2json ./yaml ./json
+
+clean:
+	@rm -rf ./json rst-idn-test-labels.zip
