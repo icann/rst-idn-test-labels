@@ -8,6 +8,7 @@ use File::Copy;
 use File::Path qw(make_path);
 use File::Slurp;
 use File::Spec;
+use I18N::LangTags qw(:ALL);
 use JSON::Schema::Modern;
 use JSON::XS;
 use YAML::XS;
@@ -16,8 +17,8 @@ use common::sense;
 
 $YAML::XS::Boolean = q{JSON::PP};
 
-my $help;
-GetOptions('help|h' => \$help);
+my ($help, $lint);
+GetOptions('help|h' => \$help, 'lint|l' => \$lint);
 
 if ($help) {
     undef $/;
@@ -28,7 +29,7 @@ if ($help) {
 my $src_dir = abs_path(shift(@ARGV) || q{.});
 my $dst_dir = abs_path(shift(@ARGV) || $src_dir);
 
-make_path($dst_dir) unless (-e $dst_dir);
+make_path($dst_dir) unless (-e $dst_dir || $lint);
 
 my $release = mirror_json(q{https://api.github.com/repos/icann/rst-api-spec/releases/latest});
 
@@ -47,10 +48,18 @@ munge_schema_uris($spec);
 #
 # set up a JSON::Schema::Modern validator
 #
-my $js = JSON::Schema::Modern->new;
-foreach my $name (keys(%{$spec->{components}->{schemas}})) {
-    my $uri = SCHEMA_URL_BASE . $name;
-    $js->add_schema($uri => $spec->{components}->{schemas}->{$name});
+my $js = JSON::Schema::Modern->new(validate_formats => 1);
+
+eval {
+    foreach my $name (keys(%{$spec->{components}->{schemas}})) {
+        my $uri = SCHEMA_URL_BASE . $name;
+        $js->add_schema($uri => $spec->{components}->{schemas}->{$name});
+    }
+};
+
+if (length $@ > 0) {
+    say STDERR q{Error loading schema: }.$@;
+    exit(1);
 }
 
 #
@@ -67,6 +76,7 @@ foreach my $file (@files) {
     # try parsing the YAML
     #
     eval { $table = YAML::XS::LoadFile($file) };
+
     if (ref($table) ne q{HASH}) {
         chomp($@);
         printf(STDERR "%s: YAML parse error (%s)\n", basename($file), $@);
@@ -84,14 +94,35 @@ foreach my $file (@files) {
         if (!$result->valid) {
             foreach my $error ($result->errors) {
                 printf(STDERR "%s: %s: %s\n", basename($file), $error->instance_location, $error->error);
+                exit(1);
             }
-
-        } else {
-            # write JSON file
-            write_file(File::Spec->catfile($dst_dir, $table->{tag}.q{.json}), $json->encode($table));
-
-            printf(STDERR "%s: OK\n", basename($file, q{.yaml}));
         }
+
+        #
+        # validate language tag
+        #
+        if (!is_language_tag($table->{tag})) {
+                printf(STDERR "%s: '%s' is not a valid language tag\n", basename($file), $table->{tag});
+                exit(1);
+        }
+
+        #
+        # validate language tag(s) in variantTLDAllocatability propertie of the
+        # allocatable test labels
+        #
+        foreach my $label (@{$table->{testLabels}->{allocatableLabels}}) {
+            foreach my $tag (@{$label->{variantTLDAllocatability}}) {
+                if (!is_language_tag($tag)) {
+                    printf(STDERR "%s: in variantTLDAllocatability for the allocatable label '%s', '%s' is not a valid language tag\n", basename($file), $label->{label}, $tag);
+                    exit(1);
+                }
+            }
+        }
+
+        # write JSON file
+        write_file(File::Spec->catfile($dst_dir, $table->{tag}.q{.json}), $json->encode($table)) unless ($lint);
+
+        printf(STDERR "%s: OK\n", basename($file, q{.yaml}));
     }
 }
 
@@ -117,7 +148,7 @@ sub munge_schema_uris {
 }
 
 __DATA__
-Usage: labels.pl [SRC_DIR [DST_DIR]]
+Usage: labels.pl [--lint [SRC_DIR]] | [[SRC_DIR [DST_DIR]]
 
 This script converts RST v2.0 IDN test label files from YAML to JSON. SRC_DIR
 is where the YAML files can be found, DST_DIR is where the JSON files will be
@@ -125,3 +156,6 @@ written.
 
 If SRC_DIR is not specified, then the current working directory is used. If
 DST_DIR is not specified, then SRC_DIR will be used.
+
+If --lint is passed, then the YAML files will be validated against the schema,
+and no JSON files will be written.
