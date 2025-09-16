@@ -81,10 +81,6 @@ foreach my $file (@files) {
         chomp($@);
         printf(STDERR "%s: YAML parse error (%s)\n", basename($file), $@);
 
-    } elsif (!is_language_tag($table->{tag})) {
-        printf(STDERR "%s: '%s' is not a valid language tag\n", basename($file), $table->{tag});
-        exit(1);
-
     } else {
         #
         # coerce to string
@@ -101,6 +97,10 @@ foreach my $file (@files) {
                 printf(STDERR "%s: %s: %s\n", basename($file), $error->instance_location, $error->error);
                 exit(1);
             }
+
+        } elsif (!is_language_tag($table->{tag})) {
+                printf(STDERR "%s: '%s' is not a valid language tag\n", basename($file), $table->{tag});
+                exit(1);
 
         } else {
             # write JSON file
