@@ -57,22 +57,22 @@ use them in the OT&E environment for testing in that environment.
 
 # Releasing a new version
 
-1. The [YAML files](yaml/) are maintained by the IDN Team (YAML is used as the
+1. The [YAML files](yaml/) are maintained by the IDN Team *(YAML is used as the
    source format as it is a superset of JSON but (a) is easier to edit and (b)
-   supports comments).
-2. When a new set of files are provided, commit the files, and tag the
-   repository with a tag of the form `vN.N.N`, following [Semantic
-   Versioning](https://semver.org).
-2. Push the tag to GitHub using `git push --tags`.
+   supports comments)*.
+2. When a new release is needed, create a tag of the form `vN.N.N` *(following
+   [Semantic Versioning](https://semver.org))*.
+2. Push the tag using `git push --tags`.
 3. Create a new
-   [release](https://github.com/icann/rst-idn-test-labels/releases/new) using
-   the tag. The [release workflow](.github/workflows/release.yaml) will generate
-   JSON versions and publish them as release assets.
-4. Update the note at the top of this file.
+   [release](https://github.com/icann/rst-idn-test-labels/releases/new), using
+   the tag. When the release is published, the [release
+   workflow](.github/workflows/release.yaml) will generate the JSON files and
+   publish them as release assets.
+4. Update the note at the top of this file to reference the latest release.
 
-Since the [RST test specs](https://github.com/icann/rst-test-specs) includes a
+The [RST test specs](https://github.com/icann/rst-test-specs) includes a
 [resource](https://icann.github.io/rst-test-specs/rst-test-specs.html#Resource-idn.testLabelsForOTE)
-that links to the test labels, every time a new version of the test labels is
+that links to the test labels. Every time a new version of the test labels is
 released, a [new version of the test
 specs](https://github.com/icann/rst-test-specs?tab=readme-ov-file#releasing-a-new-version)
 should also be released, in order to incorporate the new URL.
