@@ -16,8 +16,8 @@ use common::sense;
 
 $YAML::XS::Boolean = q{JSON::PP};
 
-my $help;
-GetOptions('help|h' => \$help);
+my ($help, $lint);
+GetOptions('help|h' => \$help, 'lint|l' => \$lint);
 
 if ($help) {
     undef $/;
@@ -28,7 +28,7 @@ if ($help) {
 my $src_dir = abs_path(shift(@ARGV) || q{.});
 my $dst_dir = abs_path(shift(@ARGV) || $src_dir);
 
-make_path($dst_dir) unless (-e $dst_dir);
+make_path($dst_dir) unless (-e $dst_dir || $lint);
 
 my $release = mirror_json(q{https://api.github.com/repos/icann/rst-api-spec/releases/latest});
 
@@ -91,7 +91,7 @@ foreach my $file (@files) {
 
         } else {
             # write JSON file
-            write_file(File::Spec->catfile($dst_dir, $table->{tag}.q{.json}), $json->encode($table));
+            write_file(File::Spec->catfile($dst_dir, $table->{tag}.q{.json}), $json->encode($table)) unless ($lint);
 
             printf(STDERR "%s: OK\n", basename($file, q{.yaml}));
         }
@@ -122,7 +122,7 @@ sub munge_schema_uris {
 }
 
 __DATA__
-Usage: labels.pl [SRC_DIR [DST_DIR]]
+Usage: labels.pl [--lint [SRC_DIR]] | [[SRC_DIR [DST_DIR]]
 
 This script converts RST v2.0 IDN test label files from YAML to JSON. SRC_DIR
 is where the YAML files can be found, DST_DIR is where the JSON files will be
@@ -130,3 +130,6 @@ written.
 
 If SRC_DIR is not specified, then the current working directory is used. If
 DST_DIR is not specified, then SRC_DIR will be used.
+
+If --lint is passed, then the YAML files will be validated against the schema,
+and no JSON files will be written.
