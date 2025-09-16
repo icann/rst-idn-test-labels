@@ -90,7 +90,7 @@ foreach my $file (@files) {
             # write JSON file
             write_file(File::Spec->catfile($dst_dir, $table->{tag}.q{.json}), $json->encode($table));
 
-            printf(STDERR "%s: OK\n", basename($file));
+            printf(STDERR "%s: OK\n", basename($file, q{.yaml}));
         }
     }
 }
