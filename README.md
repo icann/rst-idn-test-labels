@@ -6,7 +6,7 @@
 
 > [!WARNING]
 > *Looking for JSON files? They are now available from the
-> [releases page](https://github.com/icann/rst-idn-test-labels/releases) page.*
+> [releases page](https://github.com/icann/rst-idn-test-labels/releases).*
 
 This repository generates JSON files representing test data for use in
 the [Registry System Testing (RST) v2.0
