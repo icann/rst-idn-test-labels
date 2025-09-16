@@ -57,9 +57,12 @@ use them in the OT&E environment for testing in that environment.
 
 # Releasing a new version
 
-1. The [YAML files](yaml/) are maintained by the IDN Team. When a new set of
-   files are provided, commit the files, and tag the repository with a tag of
-   the form `vN.N.N`, following [Semantic Versioning](https://semver.org).
+1. The [YAML files](yaml/) are maintained by the IDN Team (YAML is used as the
+   source format as it is a superset of JSON but (a) is easier to edit and (b)
+   supports comments).
+2. When a new set of files are provided, commit the files, and tag the
+   repository with a tag of the form `vN.N.N`, following [Semantic
+   Versioning](https://semver.org).
 2. Push the tag to GitHub using `git push --tags`.
 3. Create a new
    [release](https://github.com/icann/rst-idn-test-labels/releases/new) using
