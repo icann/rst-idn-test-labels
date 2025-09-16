@@ -68,8 +68,6 @@ my @files = sort grep { /\.yaml$/ } map { File::Spec->catfile($src_dir, $_) } re
 
 my $json = JSON::XS->new->canonical->pretty->utf8;
 
-my $errcount = 0;
-
 foreach my $file (@files) {
 	my $table;
 
@@ -91,10 +89,11 @@ foreach my $file (@files) {
         # try validating against the idnTableRequest schema:
         #
         my $result = $js->evaluate($table, SCHEMA_URL_BASE . q{idnTableRequest});
+
         if (!$result->valid) {
             foreach my $error ($result->errors) {
                 printf(STDERR "%s: %s: %s\n", basename($file), $error->instance_location, $error->error);
-                $errcount++;
+                exit(1);
             }
 
         } else {
@@ -105,8 +104,6 @@ foreach my $file (@files) {
         }
     }
 }
-
-exit($errcount);
 
 #
 # recursively convert the URIs found in $ref properties to a global URI
