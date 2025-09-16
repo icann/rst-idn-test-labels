@@ -1,6 +1,6 @@
 all: zip
 
-zip: json license
+zip: json
 	@cp -v LICENSE ./json/
 	@zip -j rst-idn-test-labels.zip json/*
 
