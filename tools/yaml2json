@@ -5,6 +5,7 @@ use Cwd qw(abs_path);
 use Data::Mirror qw(mirror_json);
 use File::Basename qw(basename);
 use File::Copy;
+use File::Path qw(make_path);
 use File::Slurp;
 use File::Spec;
 use JSON::Schema::Modern;
@@ -26,6 +27,8 @@ if ($help) {
 
 my $src_dir = abs_path(shift(@ARGV) || q{.});
 my $dst_dir = abs_path(shift(@ARGV) || $src_dir);
+
+make_path($dst_dir) unless (-e $dst_dir);
 
 my $release = mirror_json(q{https://api.github.com/repos/icann/rst-api-spec/releases/latest});
 
