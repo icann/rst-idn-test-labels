@@ -11,6 +11,7 @@ use File::Spec;
 use I18N::LangTags qw(:ALL);
 use JSON::Schema::Modern;
 use JSON::XS;
+use List::Util qw(any);
 use YAML::XS;
 use constant SCHEMA_URL_BASE => q{https://icann.github.io/rst-api-spec/schema/};
 use common::sense;
@@ -116,6 +117,14 @@ foreach my $file (@files) {
                     printf(STDERR "%s: in variantTLDAllocatability for the allocatable label '%s', '%s' is not a valid language tag\n", basename($file), $label->{label}, $tag);
                     exit(1);
                 }
+            }
+
+            #
+            # validate that none of the label's variants match the label
+            #
+            if (any { $_->{label} eq $label->{label} } @{$label->{variants}}) {
+                printf(STDERR "%s: variants array for the allocatable label '%s' includes that label\n", basename($file), $label->{label});
+                exit(1);
             }
         }
 
