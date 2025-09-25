@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > *The current release is
-> [v1.0.4](https://github.com/icann/rst-idn-test-labels/releases/tag/v1.0.4).*
+> [v1.0.5](https://github.com/icann/rst-idn-test-labels/releases/tag/v1.0.5).*
 
 > [!WARNING]
 > *Looking for JSON files? They are now available from the
