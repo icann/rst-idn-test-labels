@@ -15,10 +15,11 @@ testLabels:
     - label: xn--b3cyx2adg
       variantTLDAllocatability: ["th","und-Thai"]
       variants: []
+    # this label have a blocked variant
     - label: xn--d3cl6awe62a
       variantTLDAllocatability: ["th","und-Thai"]
       variants:
-        - label: xn--d3cl6awe62a
+        - label: xn--7-gxfr7b2ae
           variantTLDAllocatability: []
   unallocatableLabels:
     # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
