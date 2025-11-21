@@ -13,12 +13,12 @@ testLabels:
       variantTLDAllocatability: ["ja","und-Jpan","und-Kore","zh","und-Hani"]
       variants: []
     - label: xn--n8jtcwd2e
-      variantTLDAllocatability: ["ja","und-Japn"]
+      variantTLDAllocatability: ["ja","und-Jpan"]
       variants:
         - label: xn--n8jtc5hpk
           variantTLDAllocatability: []
     - label: xn--7ckg4g3a9f253soh9c
-      variantTLDAllocatability: ["ja","und-Japn"]
+      variantTLDAllocatability: ["ja","und-Jpan"]
       variants:
         - label: xn--7ckg4g3a2694aba8463e
           variantTLDAllocatability: []
