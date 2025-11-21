@@ -10,18 +10,18 @@ testLabels:
   allocatableLabels:
     # this label does not have any variant
     - label: xn--u8jegik
-      variantTLDAllocatability: ["ja","und-Japn"]
+      variantTLDAllocatability: ["ja","und-Jpan"]
       variants: []
     - label: xn--v9jua6azd
-      variantTLDAllocatability: ["ja","und-Japn"]
+      variantTLDAllocatability: ["ja","und-Jpan"]
       variants:
         - label: xn--v9jzb3byr
           variantTLDAllocatability: []
     - label: xn--oiqy01at42aj3e4q9a
-      variantTLDAllocatability: ["ja","und-Japn","zh","und-Hani"]
+      variantTLDAllocatability: ["ja","und-Jpan","zh","und-Hani"]
       variants: []
     - label: xn--u6jwwu15fe97a
-      variantTLDAllocatability: ["ja","und-Japn"]
+      variantTLDAllocatability: ["ja","und-Jpan"]
       variants:
         - label: xn--u6jy23gbzce99c
           variantTLDAllocatability: []
@@ -30,7 +30,7 @@ testLabels:
         - label: xn--u6j0sh45e3v3b
           variantTLDAllocatability: []
     - label: xn--y8jk7b0d0ev204e
-      variantTLDAllocatability: ["ja","und-Japn"]
+      variantTLDAllocatability: ["ja","und-Jpan"]
       variants: []
   unallocatableLabels:
     # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
