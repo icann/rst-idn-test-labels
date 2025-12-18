@@ -68,6 +68,11 @@ if (length $@ > 0) {
 #
 my @files = sort grep { /\.yaml$/ } map { File::Spec->catfile($src_dir, $_) } read_dir($src_dir);
 
+if (scalar(@files) < 1) {
+    say STDERR q{no YAML files found!};
+    exit(1);
+}
+
 my $json = JSON::XS->new->canonical->pretty->utf8;
 
 foreach my $file (@files) {
