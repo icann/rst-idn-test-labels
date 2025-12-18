@@ -7,7 +7,7 @@ lint: clean
 zip: json
 	@echo creating zip file...
 	@cp -v LICENSE ./json/
-	@zip -j rst-idn-test-labels.zip json/*
+	@cd json ; zip -r ../rst-idn-test-labels.zip *
 
 json: clean
 	@echo creating JSON files...
