@@ -4,24 +4,23 @@
 > *The current release is
 > [v1.0.6](https://github.com/icann/rst-idn-test-labels/releases/tag/v1.0.6).*
 
-> [!WARNING]
-> *Looking for JSON files? They are now available from the
-> [releases page](https://github.com/icann/rst-idn-test-labels/releases).*
-
 This repository generates JSON files representing test data for use in
 the [Registry System Testing (RST) v2.0
 service](https://www.icann.org/resources/registry-system-testing-v2.0). These
 files are used by the RST system to confirm compliance with the [IDN
 Guidelines](https://www.icann.org/resources/pages/implementation-guidelines-2012-02-25-en)
 by gTLD registries implementing the [Second-Level Reference Label Generation
-Rules](https://www.icann.org/resources/pages/second-level-lgr-2015-06-21-en).
+Rules](https://www.icann.org/resources/pages/second-level-lgr-2015-06-21-en),
+including the [Full Variant Set
+LGRs](https://newgtldprogram.icann.org/en/application-rounds/round2/rsp/full-variant-set-lgrs).
 
 During production tests, creation and configuration of RST test objects (and
-any associated IDN table objects) will be performed by ICANN org. In the [OT&E
-environment](https://www.icann.org/resources/registry-system-testing-v2.0/#ote-environment),
+any associated IDN table objects) will be performed by ICANN org.
+
+However, in the [OT&E environment](https://www.icann.org/resources/registry-system-testing-v2.0/#ote-environment),
 test subjects must create their own IDN table objects (via the [RST v2.0 REST
-API](https://icann.github.io/rst-api-spec/)) which can then be associated with
-their tests. The files in this repository may be used to do so.
+API](https://icann.github.io/rst-api-spec/)), which can then be associated with
+their tests. The files in this repository may be used for this purpose.
 
 The JSON files published on the the [releases
 page](https://github.com/icann/rst-idn-test-labels/releases) conform
@@ -48,12 +47,12 @@ to create.
 The test data in these files was developed to allow testing of gTLD registry
 systems that use the Second-Level Reference LGRs.
 
-For production tests of registry systems that use "custom" LGRs, ICANN will
-create custom test files that will be used instead. Therefore, the files in this
-repository are not useful for testing custom LGR implementations.
+The files in this repository are not useful for testing "custom" LGR
+implementations; for production tests of registry systems that use custom LGRs,
+ICANN org will create custom test files that will be used instead.
 
-Once custom table objects have been created by ICANN, test subjects are free to
-use them in the OT&E environment for testing in that environment.
+Once custom table objects have been created by ICANN org, test subjects are free
+to use them in the OT&E environment for testing in that environment.
 
 # Releasing a new version
 
