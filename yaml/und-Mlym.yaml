@@ -10,15 +10,15 @@ testLabels:
   allocatableLabels:
     # this label does not have any variant
     - label: xn--qwca3c0br5d
-      variantTLDAllocatability: ["und-Mlyn"]
+      variantTLDAllocatability: ["und-Mlym"]
       variants: []
     - label: xn--uwcvag5j
-      variantTLDAllocatability: ["und-Mlyn"]
+      variantTLDAllocatability: ["und-Mlym"]
       variants:
         - label: xn--uwcvag
           variantTLDAllocatability: []
     - label: xn--7vc6d0dpi
-      variantTLDAllocatability: ["und-Mlyn"]
+      variantTLDAllocatability: ["und-Mlym"]
       variants:
         - label: xn--7vc8b1a8h
           variantTLDAllocatability: []
