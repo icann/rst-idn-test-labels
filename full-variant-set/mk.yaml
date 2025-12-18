@@ -1,0 +1,28 @@
+tag: mk
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+043B
+  - U+0453
+  - U+045C
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--80ahk5b9h
+      variantTLDAllocatability: ["mk","und-Cyrl"]
+      variants: []
+    - label: xn--f1av5eemac
+      variantTLDAllocatability: ["mk"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----ptbx6ab7jbs
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----ctb2cweeaaw
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----llc6a5as
+    # Contains code point from same script but not in the repertoire
+    - xn--c1ab5bm2fsb
+    # Contains code point not in the repertoire
+    - xn--e1aqnf421j

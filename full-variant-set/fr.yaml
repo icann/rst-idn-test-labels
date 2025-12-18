@@ -1,0 +1,43 @@
+tag: fr
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+006A
+  - U+00E6
+  - U+0153
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--jhv-eya
+      variantTLDAllocatability: ["fr"]
+      variants: []
+    # One blocked variant
+    - label: xn--gtaq-xoa96d
+      variantTLDAllocatability: []
+      variants:
+        - label: xn--gtq-bla4a21d
+          variantTLDAllocatability: []
+    # One allocatable Variant
+    - label: xn--sbm-0la0b
+      variantTLDAllocatability: []
+      variants:
+        - label: xn--isbm-yoa
+          variantTLDAllocatability: ["fr"]
+    # One two blocked and one allocatable variant
+    - label: xn--byxqrjh-h3a
+      variantTLDAllocatability: ["fr"]
+      variants:
+        - label: byxqrjyh
+          variantTLDAllocatability: ["fr"]
+        - label: xn--bxqrjh-pzae
+          variantTLDAllocatability: []
+        - label: xn--bxqrjyh-c3a
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Leading
+    - xn---phqm-sra
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Lagging
+    - xn--ftqgzj--qxa
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and fourth poistion
+    - xn--q--rpt-ihbz

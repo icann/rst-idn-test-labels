@@ -1,0 +1,26 @@
+tag: pl
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+006B
+  - U+015B
+  - U+017A
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--mlfud-ucb5u
+      variantTLDAllocatability: ["pl","und-Latn"]
+      variants: []
+    - label: xn--infm-7va11bqh
+      variantTLDAllocatability: ["pl","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---oqx-39aa
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--jmtqk--3ib
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--l--yq-3wa81d0h
+    # Contains code point not in the repertoire
+    - xn--xuq-rra0smm55xz

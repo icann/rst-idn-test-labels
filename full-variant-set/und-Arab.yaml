@@ -1,0 +1,122 @@
+tag: und-Arab
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+eppSafeCodePoints:
+  - U+0689
+  - U+0693
+  - U+076F
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--ggb5znb30c00cha
+      variantTLDAllocatability: ["und-Arab"]
+      variants: []
+    # One blocked variant
+    - label: xn--hgbvp94amd0cvc2j
+      variantTLDAllocatability: ["und-Arab"]
+      variants:
+        - label: xn--sgbk6qycwe0cvc2j
+          variantTLDAllocatability: []
+    # Three blocked Variants:
+    - label: xn--ggbj4ah0j1mycu2u
+      variantTLDAllocatability: ["und-Arab"]
+      variants:
+        - label: xn--ggbja3bj75bucu2u
+          variantTLDAllocatability: []
+        - label: xn--ggb3af5gc71aycu2u
+          variantTLDAllocatability: []
+        - label: xn--ggbj3ah8i4mycu2u
+          variantTLDAllocatability: []
+    # One allocated and two blocked variants
+    - label: xn--hgb3f5qia23epe
+      variantTLDAllocatability: ["und-Arab"]
+      variants:
+        - label: xn--igb1f5qia23epe
+          variantTLDAllocatability: ["und-Arab"]
+        - label: xn--hgb83agaz00ete
+          variantTLDAllocatability: []
+        - label: xn--igb63agaz00ete
+          variantTLDAllocatability: []
+    # No variants ar and und-Arab
+    - label: xn--ggbootpk6h
+      variantTLDAllocatability: ["ar","und-Arab"]
+      variants: []
+    # One blocked variant
+    - label: xn--ngbqhhjkk4gwa
+      variantTLDAllocatability: ["ar","und-Arab"]
+      variants:
+        - label: xn--jgbiykjkmm5h
+          variantTLDAllocatability: []
+    # One allocatable Variant
+    - label: xn--jgbh8ahje
+      variantTLDAllocatability: ["ar","und-Arab"]
+      variants:
+        - label: xn--ngbwfhe0h
+          variantTLDAllocatability: ["ar","und-Arab"]
+    # Four blocked variants
+    - label: xn--mgbne7f
+      variantTLDAllocatability: ["ar","und-Arab"]
+      variants:
+        - label: xn--hgbxe7f
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--igbve7f
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--kgbre7f
+          variantTLDAllocatability: []
+      variants:
+        - label: xn--tgbc6dvj
+          variantTLDAllocatability: []
+    # Two blocked and one allocatable variant
+    - label: xn--hgbmsbq7a3j
+      variantTLDAllocatability: ["ar","und-Arab"]
+      variants:
+        - label: xn--hgbmsbq7a99g
+          variantTLDAllocatability: []
+        - label: xn--mgbcsbq7a3j
+          variantTLDAllocatability: ["ar","und-Arab"]
+        - label: xn--mgbcsbq7a99g
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D - HYPHEN-MINUS ⍟ - Leading
+    - xn----lmc7dc83bx6bsxdvb
+    # RFC 5891 restrictions on placement of U+002D - HYPHEN-MINUS ⍟ - Lagging
+    - xn----ooc40gh9a3a
+    # RFC 5891 restrictions on placement of U+002D - HYPHEN-MINUS ⍟ - third and fourth position
+    - xn-----20d1c1b62f67d0b
+    # a label/variant should avoid mixing languages - 0629 from Group 1 and 06C2 from Group 2
+    - xn--ogb8ona2d5mu5a9b
+    # RFC 5893 RTL labels cannot start with a digit ⍟ - Latin Digit
+    - xn--2-inc3a2xsd6o
+    # RFC 5893 RTL labels cannot start with a digit ⍟ - Arabic indic Digit
+    - xn--ghb7dzdse2ew1c83d
+    # RFC 5892 and RFC 5893 restrictions on mixing digits; extended to all three sets - 0035 from Latin and 0066 from Arabic Indic digits
+    - xn--5-unc9b0hmexhugs1d
+    # U+0649 ALEF MAKSURA must not be in initial or medial position - 0649 followed by 0620
+    - xn--fgb5f4hpk31a95c
+    # WLE Rule 4: do not mix Arabic letters HEH and HEH GOAL in the same label - Mixing of 0647 and 06C1
+    - xn--ygb3b8nva6r98a
+    # WLE Rule 5: do not mix Arabic letters HEH GOAL and AE in the same label - 06C1 and 06D5
+    - xn--zgbd0c1wf3r8e
+    # WLE Rule 6: do not mix Arabic letters HEH and AE in the same label - 0647 and 06D5
+    - xn--jhb4kqb6fg0t
+    # WLE Rule 7: do not mix Arabic letters HEH and HEH DOACHASHMEE in the same label - 0647 and 06BE
+    - xn--ygb4byl7hkb58d
+    # WLE Rule 9: do not mix Arabic letters NOON WITH THREE DOTS ABOVE and YEH WITH THREE DOTS BELOW in the same label - 06BD and 06D1
+    - xn--cjbbh0svd19apc
+    # WLE Rule 10: do not mix Arabic letters PEH and NOON WITH THREE DOTS ABOVE in the same label - 067E and 06BD
+    - xn--ggb6a9p7goa2du5e7c
+    # WLE 11:do not mix Arabic letters FEH and FEH WITH DOT MOVED BELOW in the same label - 0641 and 06A2
+    - xn--sgbcf2e8tle9ls6b67eya
+    # WLE Rule 12: do not mix Arabic letters QAF and QAF WITH DOT ABOVE in the same label - 0642 and 06A7
+    - xn--tgbv2a48a7a6ao7iq1d7i
+    # WLE Rule 13: do not mix Arabic letters FEH and QAF WITH DOT ABOVE in the same label - 0641 and 06A7
+    - xn--ngb6azar6yua9esf6fw6s
+    # WLE Rule 14: do not mix Arabic letters KAF WITH RING and GAF in the same label - 06AB and 06AF
+    - xn--ngbjdzj43cwg6a
+    # WLE Rule 15: do not mix Arabic letters KAF WITH RING and KEHEH WITH THREE DOTS ABOVE - 06AB and 0763
+    - xn--vgb8t6a0gx9afa47tfa
+    # WLE Rule 16: do not mix Arabic letters GAF and KEHEH WITH THREE DOTS ABOVE in the same label - 06AF and 0763
+    - xn--tgbi9wpal6rs0c

@@ -1,0 +1,28 @@
+tag: en
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0067
+  - U+0071
+  - U+0078
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: hhetw
+      variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+      variants: []
+    - label: bmmvmm
+      variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - -ztdcqcb
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - mbpdpjz-
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - lz--vnlkl
+    # Contains code points not part of the repertoire
+    - xn--mvqry-cra
+    # Contains extended-cp code point
+    - xn--nave-6pa

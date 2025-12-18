@@ -1,0 +1,34 @@
+tag: und-Telu
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0C1B
+  - U+0C24
+  - U+0C2E
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--joc8faw4j
+      variantTLDAllocatability: ["und-Telu"]
+      variants: []
+    - label: xn--jpcaqb9c1fm
+      variantTLDAllocatability: ["und-Telu"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----b4e5cgy7d5a9c
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----m2ec6e9c9a4bt8hd3n
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----okhn1czelo
+    # WLE 1: H must be preceded by a C
+    - xn--fpcak3ma
+    # WLE 2: M must be preceded by C
+    - xn--goca4isa5g
+    # WLE 3: Visarga must be preceded by V, M or C
+    - xn--gocac0fud
+    # WLE 4: Anusvara must be preceded by V, M or C
+    - xn--gocb7cwa
+    # WLE 6: V cannot be preceded by H
+    - xn--toc9e1a2d

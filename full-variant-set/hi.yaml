@@ -1,0 +1,39 @@
+tag: hi
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0915
+  - U+0924
+  - U+0909
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--11b2a0b
+      variantTLDAllocatability: ["hi","und-Deva"]
+      variants: []
+    # this label has one blocked variant
+    - label: xn--i1bvz2i
+      variantTLDAllocatability: ["hi","und-Deva"]
+      variants:
+        # this is blocked
+        - label: xn--h1b1at2i
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----uud9b6a3fe
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----0vdmh
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    # RFC 5891 restrictions on placement of combining marks
+    - xn--11b4aya5ec
+    # Section 7 WLE 1: Rule for Nukta which restricts its preceding characters
+    - xn--r2bezmlb
+    # Section 7, WLE 2, 3: Halant or matra characters can only be preceded by consonant or a Nukta which is preceded by a consonant
+    - xn--61b5aqc9eg
+    # Section 7, WLE 4, 5, 6: Anusvara, Candrabindu or Visarga characters can only be preceded by either vowel or consonant or Nukta or matra
+    - xn--i1bm6cb1mobyg
+    # Section 7, WLE 7: A vowel is not allowed to follow an H
+    - xn--o1bz0eq3e8d
+    # restrictions on mixing digits
+    - xn--4-tud0d8b5b0qz

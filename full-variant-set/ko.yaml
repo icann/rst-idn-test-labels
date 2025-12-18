@@ -1,0 +1,27 @@
+tag: ko
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+C8ED
+  - U+D408
+  - U+AF4E
+testLabels:
+  allocatableLabels:
+    - label: xn--fb0bw3bggx55cwxav8l53fezd
+      variantTLDAllocatability: ["ko","und-Kore"]
+      variants: []
+    - label: xn--je0b07ks9eec92si4ax66c0hx
+      variantTLDAllocatability: ["ko","und-Kore"]
+      variants: []
+  unallocatableLabels:
+    # Hyphen at the begining
+    - xn----xh7ep3xjvd9y2ac4a
+    # Hyphen at the end
+    - xn----gc2f1nn17b39k
+    # Hyphen at 3rd and 4th position
+    - xn-----615it3zfpblhy8gt2a
+    # Contains Code Point not in the repertoire
+    - xn--ui7al70b6kghpn41a159aeob89g
+    # Contains Code Point not in the repertoire
+    - xn--38jv669apwnqpkfiaq0k

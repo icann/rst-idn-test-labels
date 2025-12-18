@@ -1,0 +1,47 @@
+tag: th
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0E0A
+  - U+0E18
+  - U+0E24
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--12cc0dtbv
+      variantTLDAllocatability: ["th","und-Thai"]
+      variants: []
+    - label: xn--e3cchnvf2c
+      variantTLDAllocatability: ["th","und-Thai"]
+      variants: []
+    - label: xn--0-zwflk7bxb6j
+      variantTLDAllocatability: ["th","und-Thai"]
+      variants:
+        - label: xn--42chh9a4a6ink
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----bxfcjhpz9c
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----9wfjm1cg4f
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----oqi8ej0a4fk1a
+    # WLE 7.2: check if current cp is preceding a consonant
+    - xn--l3ccr1c5aziva
+    # WLE 7.3: check if current cp is following a consonant
+    - xn--12c0aj3fflj9ite
+    # WLE 7.4: check if current cp is in between a consonant and either tone or consonant
+    - xn--12cc0dtbvc2hwc
+    # WLE 7.5: U+0E30 THAI CHARACTER SARA A can follow a consonant, a tone or U+0E32 THAI CHARACTER SARA AA
+    - xn--b3cyx2adg6dzo
+    # WLE 7.6, 7.9: check if current cp is following a consonant or a tone
+    - xn--42chh9a4a6i5a2b
+    # WLE 7.7, 7.8: A tone-mark, THANTHAKHAT, NIKAHIT can only follow a consonant, above-vowel or below-vowel
+    - xn--d3cl6awe0l0d
+    # WLE SL1: An abbreviation mark, PAIYANNOI cannot be at the beginning of the label and must end it
+    - xn--32ch1c9bxbw
+    # WLE SL2: A repetition mark, MAIYAMOK cannot be at the beginning of the label and must be followed by itself, a consonat or a leading vowel
+    - xn--32cpmg2etm
+    # restrictions on mixing digits
+    - xn--4-vwf1dhx1eky04a

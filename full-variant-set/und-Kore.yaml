@@ -1,0 +1,40 @@
+tag: und-Kore
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+AC02
+  - U+B9D5
+  - U+C6F1
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--vb0bj20ar8hvuj
+      variantTLDAllocatability: ["ko","und-Kore"]
+      variants: []
+    - label: xn--9d0bw1in6jjjdvu9a
+      variantTLDAllocatability: []
+      variants: []
+    - label: xn--n9so2yxeo1d
+      variantTLDAllocatability: ["und-Kore"]
+      variants:
+        - label: xn--n9so2yzjbixc
+          variantTLDAllocatability: []
+    - label: xn--bu4b4ax15a
+      variantTLDAllocatability: ["ko","und-Kore"]
+      variants:
+        - label: xn--qhqzq13k
+          variantTLDAllocatability: []
+        - label: xn--qhqzqj96o
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----191bz45aigw0e
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----v78ej61cwpaf88c
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----hv6i482b9ihm9a7et1o
+    # no-hangul-hanja-mixed-label" comment="mixed Hangul-Hanja labels are invalid
+    - xn--9cs85z56xp8rvubl02ent6ayiq
+    # Contains code points outside the repertoire
+    - xn--gkb6929fmhfmkgcmg6tcz

@@ -1,0 +1,26 @@
+tag: da
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0069
+  - U+00E5
+  - U+00F8
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--fetlm-mra9k
+      variantTLDAllocatability: ["da","no","sv","und-Latn"]
+      variants: []
+    - label: xn--ktstv-xuaz
+      variantTLDAllocatability: ["da","no","sv","und-Latn"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---yuke-pra
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--uunv--jra7a4i
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--a--cj-bsa7gcpd
+    # Contains code point from outside the repertoire
+    - xn--uri-ylao2fp747nz

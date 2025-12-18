@@ -1,0 +1,39 @@
+tag: de
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0070
+  - U+00DF
+  - U+00E4
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: nihnr
+      variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+      variants: []
+    - label: xn--rsgm-yna
+      variantTLDAllocatability: ["de","und-Latn"]
+      variants:
+        - label: rsgmss
+          variantTLDAllocatability: ["de","und-Latn"]
+    - label: xn--zoqussw-2va
+      variantTLDAllocatability: ["de","und-Latn"]
+      variants:
+        - label: zoqssussw
+          variantTLDAllocatability: ["de","und-Latn"]
+        - label: xn--zoqssuw-5va
+          variantTLDAllocatability: []
+        - label: xn--zoquw-nqab
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---jaqvu-6ya
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--bdqax--6ya
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--be--gxg-t2a
+    # Contains Extended-CP code point
+    - xn--bxsutm-1ua
+    # Contains code point not in the repertoire
+    - xn--bxsutm-us2j
