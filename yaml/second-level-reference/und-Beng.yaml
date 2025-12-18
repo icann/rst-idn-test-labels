@@ -1,0 +1,47 @@
+tag: und-Beng
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+eppSafeCodePoints:
+  - U+09AB
+  - U+09B2
+  - U+09B6
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--w5b2ae8ba
+      variantTLDAllocatability: ["und-Beng"]
+      variants: []
+    - label: xn--r5bxipsq1c25a
+      variantTLDAllocatability: ["und-Beng"]
+      variants:
+        - label: xn--r5bxips1d6xe
+          variantTLDAllocatability: ["und-Beng"]
+    - label: xn--q5b0b3a1cm
+      variantTLDAllocatability: ["und-Beng"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----42dgirp6hbt8c
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----d2dmsa6a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----wyfkps4a4c
+    # RFC 5891 restrictions on placement of combining marks
+    - xn--p5ba9byc0ce
+    # H: must be preceded by C
+    - xn--o5bba7nb5ga
+    # M: must be preceded by C
+    - xn--44b3baa6d6ibb3a
+    # D: must be preceded by any of V, C, M
+    - xn--44baa0icbc5x
+    # X: must be preceded by any of V, C, M, D
+    - xn--54bc9c3c3a9ixd
+    # B: must be preceded by any of V, C, M, D
+    - xn--54bac5gtecr3d0bc4ng
+    # Khanda Ta must be preceded by V, C, M, D, B, X, P
+    - xn--54b2bo6fo7ec9igk
+    # V cannot be preceded by H
+    - xn--84b3dvba6azj
+    # WLE 10: U+09B0 and U+09F0 cannot be mixed.
+    - xn--p5bn9cf4edof93bz

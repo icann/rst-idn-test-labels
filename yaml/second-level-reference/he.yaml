@@ -1,0 +1,38 @@
+tag: he
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+05D7
+  - U+05E2
+  - U+05E7
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--8dbgg7a5ao
+      variantTLDAllocatability: ["he","und-Hebr"]
+      variants: []
+    - label: xn--7dbgf2dagj
+      variantTLDAllocatability: ["he","und-Hebr"]
+      variants: []
+    - label: xn--7dbfi8cicd
+      variantTLDAllocatability: ["he","und-Hebr"]
+      variants:
+        - label: xn--7dbfi4cncd
+          variantTLDAllocatability: []
+    - label: xn--5dbhaa2bud7c0a
+      variantTLDAllocatability: ["he","und-Hebr"]
+      variants:
+        - label: xn--5dbhaa2bok7c0a
+          variantTLDAllocatability: []
+        - label: xn--5dbhaa7bod7c0a
+          variantTLDAllocatability: []
+        - label: xn--5dbhaa7bik7c0a
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----dicg8dh
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----3hcpi2bac8b0a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----uldof4a2c

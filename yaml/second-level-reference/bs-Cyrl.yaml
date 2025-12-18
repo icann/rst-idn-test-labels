@@ -1,0 +1,28 @@
+tag: bs-Cyrl
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0434
+  - U+0441
+  - U+045F
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--71amcdht
+      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","bs-Cyrl"]
+      variants: []
+    - label: xn--8-ntbcrf3c
+      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","ru","bs-Cyrl","bg","mk"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----6ubrdgf3a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----5ubsdfd6a
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----3ncxng2a
+    # Contains out of repertoire code point
+    - xn--i1a5byb0vlb04a
+    # Contains out of repertoire code point
+    - xn--y1adedcj

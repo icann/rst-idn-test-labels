@@ -1,0 +1,57 @@
+tag: es
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
+eppSafeCodePoints:
+  - U+00E1
+  - U+00E9
+  - U+00F1
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--mysterymnor-r7a
+      variantTLDAllocatability: ["es","fi","hu","is","no","pt","sv","und-Latn"]
+      variants: []
+    - label: xn--airllpack-3pa
+      variantTLDAllocatability: ["es","und-Latn"]
+      variants:
+        - label: airl-lpack
+          variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+    - label: shell-land
+      variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+      variants:
+        - label: xn--shellland-4pa
+          variantTLDAllocatability: []
+    - label: ul-lvl-lw
+      variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+      variants:
+        - label: xn--ul-lvllw-loa
+          variantTLDAllocatability: []
+        - label: xn--ullvl-lw-hoa
+          variantTLDAllocatability: []
+        - label: xn--ullvllw-wmad
+          variantTLDAllocatability: []
+    - label: xn--ullvllw-wmad
+      variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+      variants:
+        - label: ul-lvl-lw
+          variantTLDAllocatability: ["bs","da","de","en","es","fi","fr","hu","is","it","lt","lv","no","pl","pt","sv","und-Latn"]
+        - label: xn--ul-lvllw-loa
+          variantTLDAllocatability: []
+        - label: xn--ullvl-lw-hoa
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn---robrt-eva6f
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn--mnila--pta
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn--sp--sh-sta0h9a
+    # Contains extended cp
+    - xn--locpc-fuabb
+    # Violates "surrounded-by-L" rule
+    - xn--shawn-tja
+    # Labels with one L sharing two middle dots are invalid
+    - xn--jfll-7hab46a
+    # Contains code point outside the repertoire
+    - xn--carlos-rtm

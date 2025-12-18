@@ -1,0 +1,53 @@
+tag: ja
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+3006
+  - U+305F
+  - U+30B3
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--u8jegik
+      variantTLDAllocatability: ["ja","und-Jpan"]
+      variants: []
+    - label: xn--v9jua6azd
+      variantTLDAllocatability: ["ja","und-Jpan"]
+      variants:
+        - label: xn--v9jzb3byr
+          variantTLDAllocatability: []
+    - label: xn--oiqy01at42aj3e4q9a
+      variantTLDAllocatability: ["ja","und-Jpan","zh","und-Hani"]
+      variants: []
+    - label: xn--u6jwwu15fe97a
+      variantTLDAllocatability: ["ja","und-Jpan"]
+      variants:
+        - label: xn--u6jy23gbzce99c
+          variantTLDAllocatability: []
+        - label: xn--u6j0s8cz085a
+          variantTLDAllocatability: []
+        - label: xn--u6j0sh45e3v3b
+          variantTLDAllocatability: []
+    - label: xn--y8jk7b0d0ev204e
+      variantTLDAllocatability: ["ja","und-Jpan"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----5eutc1gya
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----weuqb8b0b7u
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----5i4a3bycugub8dd
+    # No small kana, iteration mark or prolonged sound mark may start a label or word - small kana
+    - xn--bckxf7b
+    # No small kana, iteration mark or prolonged sound mark may start a label or word
+    - xn--eeka7cbb
+    # ideographic zero follows only a kanji numeral
+    - xn--w6j9kkh1b4h7b6918d
+    # Katakana middle dot is only used between Japanese characters, and not following itself
+    - xn--pckwb0fta0ga
+    # hyphen-minus not allowed adjacent to Japanese characters
+    - xn----yguzdzcj
+    # repeated-mark
+    - xn--u8jwg7ba2436b0qmz

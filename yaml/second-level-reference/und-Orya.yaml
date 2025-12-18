@@ -1,0 +1,36 @@
+tag: und-Orya
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0B10
+  - U+0B1A
+  - U+0B28
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--mhc2a7bxa3anf
+      variantTLDAllocatability: ["und-Orya"]
+      variants: []
+    - label: xn--4gc2b1bvcvbb1m
+      variantTLDAllocatability: ["und-Orya"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----2ne9gen8cwc7bb
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----xner3l2d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----tug5a5k5bm3jwch
+    # WLE 1: N must be preceded by C1
+    - xn--7gcb3hob9cj
+    # WLE 2: B must be preceded by V, C, N or M
+    - xn--4gcc9cwc5b4g6c4g
+    # WLE 3: X must be preceded by V, C, N or M
+    - xn--4gcc5jsa3a
+    # WLE 4: D must be preceded by V, C, N or M
+    - xn--3gcd7cwcn7h9b4f
+    # WLE 5: H must be preceded by C or N
+    - xn--mhc2a7bxa3anf3i
+    # WLE 6: M must be preceded by C or N
+    - xn--9gc2dwcdzdb

@@ -1,0 +1,38 @@
+tag: und-Knda
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0C9F
+  - U+0CAC
+  - U+0CAD
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--3rcj8gsb6i
+      variantTLDAllocatability: ["und-Knda"]
+      variants: []
+    - label: xn--1-cbf6b5da8a8oc
+      variantTLDAllocatability: ["und-Knda"]
+      variants:
+        - label: xn--bsc2a7ca2a7oc3s
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----y9e4cj8hob5byd4g
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----x9e0d1cvca5hsf
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----guh0d1a2bzczdwfg
+    # H must be preceded by C
+    - xn--4rce1c2c3a0br6gd8li
+    # M must be preceded by C
+    - xn--3rc1bh4h5ctbj6b
+    # Anusvara must be preceded by C, V or M
+    - xn--3rc5b6c2a6ccf5g
+    # Visarga must be preceded by C, V or M
+    - xn--3rcck1jj2c4gna7h
+    # V cannot be preceded by H
+    - xn--3rci7bfe4m4d5bl7d
+    # restrictions on mixing digits
+    - xn--1-cbf5ii3a1cq6h4m

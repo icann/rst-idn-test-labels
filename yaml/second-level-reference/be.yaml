@@ -1,0 +1,28 @@
+tag: be
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - "U+043D"
+  - "U+0446"
+  - "U+0447"
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--90awbran7cq
+      variantTLDAllocatability: ["be","ru","und-Cyrl",]
+      variants: []
+    - label: xn--e1ac5aw
+      variantTLDAllocatability: ["be","bg","bs-Cyrl","cnr-Cyrl","mk","ru","sr-Cyrl","uk","und-Cyrl"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----ftbjsg1ad5fsa
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----9sbdc8cycza
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----8kcqlwp7r
+    # Contains code-point from the same code page but not in the repertoire
+    - xn--f1ag1a2bds3b
+    # Contains code-point from the not in the repertoire
+    - xn--hea71noam4fz

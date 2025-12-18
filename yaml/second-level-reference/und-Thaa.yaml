@@ -1,0 +1,52 @@
+tag: und-Thaa
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - "U+0789 U+07A8"
+  - "U+0790 U+07AB"
+  - "U+07A4 U+07AD"
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--rqbrh4erbh
+      variantTLDAllocatability: ["und-Thaa"]
+      variants: []
+    - label: xn--crbilr
+      variantTLDAllocatability: ["und-Thaa"]
+      variants:
+        - label: xn--oqb9byar
+          variantTLDAllocatability: []
+        - label: xn--crbkir
+          variantTLDAllocatability: []
+        - label: xn--xqb0blr
+          variantTLDAllocatability: []
+        - label: xn--oqbr0era
+          variantTLDAllocatability: []
+        - label: xn--xqb2bir
+          variantTLDAllocatability: []
+        - label: xn--drbglr
+          variantTLDAllocatability: []
+        - label: xn--oqb1cvar
+          variantTLDAllocatability: []
+        - label: xn--drbiir
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----k7c9btt1bw
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----77cjc0be0e
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----8pezx2b
+    # disallowed-for-N
+    - xn--jqbdh6l
+    # RFC 5893 RTL labels cannot start with a digit
+    - xn--2-16c5fa9bkt
+    # WLE 3: N followed by C cannot start a word, that is, it cannot be the start of a label, or follow a hyphen or digit.
+    - xn--jqb0a7btt1bw
+    # WLE 4: N cannot be followed by NC or NN
+    - xn--jqbaa3a7bn8j8bk
+    # WLE1: a vowel always follows a consonant or Noonnu or Raa.
+    - xn--0qb2axnk
+    # WLE2: a consonant is always follwed by a vowel.
+    - xn--brbdglj1bz

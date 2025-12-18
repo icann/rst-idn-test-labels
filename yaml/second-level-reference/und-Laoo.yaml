@@ -1,0 +1,47 @@
+tag: und-Laoo
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0E95
+  - U+0E9F
+  - U+0EAE
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--86cl3bwaes3d
+      variantTLDAllocatability: ["und-Laoo"]
+      variants: []
+    - label: xn--p6cc2e7a3a5bzac4f3bwfj
+      variantTLDAllocatability: ["und-Laoo"]
+      variants: []
+    - label: xn--12-k1ilq2i5b6bd2hi7i
+      variantTLDAllocatability: ["und-Laoo"]
+      variants:
+        - label: xn--p6cfk6esb9ad2fg9gxlma
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----c4f1gaa7ac9fe1gc2d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----43fi9pxaz7a7d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----51i0eteual5ezb
+    # A semi-consonant must follow a consonant
+    - xn--p6cc2ea7jcb5ee7bxgwb
+    # A vowel-before precedes a main consonant cluster
+    - xn--s6cs4ita9b7b
+    # A vowel-above, and vowel-below follow a main consonant C
+    - xn--v6czq0c2a0cxbfxg
+    # A vowel-after follows a main consonant, tone-mark or vowel-above
+    - xn--16c1dya7h
+    # The sequence U+0EB2 U+0EB0 follows a vowel before, and a consonant cluster
+    - xn--e7c0cf0e
+    # A tone-mark follows a main consonant, vowel-above or vowel-below
+    - xn--p6c0f7aa2ib
+    # The sign U+0ECC can only occur after final consonants
+    - xn--86clzs2afv1euj
+    # The sign U+0EC6 can only occur 0 to 3 times at the end of the label
+    - xn--n7c6a8caaa
+    # restrictions on mixing digits
+    - xn--1-b4fs3nb7c7a3de6iz

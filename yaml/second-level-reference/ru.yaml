@@ -1,0 +1,26 @@
+tag: ru
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0430
+  - U+0442
+  - U+0451
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--y1adedcj
+      variantTLDAllocatability: ["ru","und-Cyrl"]
+      variants: []
+    - label: xn--8-ntbcrf3c
+      variantTLDAllocatability: ["sr-Cyrl","cnr-Cyrl","und-Cyrl","ru","bs-Cyrl","bg","mk"]
+      variants: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----oubffedk
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----nubffhgq
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----0lc7eicl
+    # Contains out of repertoire code point
+    - xn--i1a5byb0vlb04a

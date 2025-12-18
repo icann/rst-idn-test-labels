@@ -1,0 +1,36 @@
+tag: und-Gujr
+version: 1.0
+isReferenceLGR: true
+permittedVariantPolicies: ["allblockvar"]
+eppSafeCodePoints:
+  - U+0A90
+  - U+0AA0
+  - U+0AB2
+testLabels:
+  allocatableLabels:
+    # this label does not have any variant
+    - label: xn--gect7atgh
+      variantTLDAllocatability: ["und-Gujr"]
+      variants: []
+    - label: xn--hdc1e4ahxs7bcd5l
+      variantTLDAllocatability: ["und-Gujr"]
+      variants:
+        - label: xn--hdc1e4a0ap1bbd1ktl
+          variantTLDAllocatability: []
+  unallocatableLabels:
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Start
+    - xn----nie0ajd7fq
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - End
+    - xn----0ge3e5b2bt6b4d
+    # RFC 5891 restrictions on placement of U+002D (-) ⍟ - Third and Fourth Position
+    - xn-----5lgi4c2d5cd3k
+    # WLE 1: N must be preceded by a specific set of Cs
+    - xn--udcm9bybl4eo5j
+    # WLE 2: Halant must be preceded by C or N; WLE 5: M: must be preceded by C or N
+    - xn--ndcn0h1a5bk3g
+    # WLE 3 and WLE 4: Visarga and Anusvara must be preceded by V, C, N or M"
+    - xn--hdcf5gqbkcf5i1f
+    # restrictions on mixing digits
+    - xn--2-uge2c3dtb2b0c0fpa5x
+    # labels with leading combining marks are invalid &#x235F;
+    - xn--hdc2ezao6a2bcz
