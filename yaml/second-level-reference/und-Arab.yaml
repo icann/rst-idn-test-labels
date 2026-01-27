@@ -32,7 +32,7 @@ testLabels:
     - label: xn--hgb3f5qia23epe
       variantTLDAllocatability: ["und-Arab"]
       variants:
-        - label: xn--igb1f5qia23epe
+        - label: xn--mgb3e1ria23epe
           variantTLDAllocatability: ["und-Arab"]
         - label: xn--hgb83agaz00ete
           variantTLDAllocatability: []
