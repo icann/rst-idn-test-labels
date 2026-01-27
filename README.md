@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > *The current release is
-> [v1.0.7](https://github.com/icann/rst-idn-test-labels/releases/tag/v1.0.7).*
+> [v1.0.8](https://github.com/icann/rst-idn-test-labels/releases/tag/v1.0.8).*
 
 This repository generates JSON files representing test data for use in
 the [Registry System Testing (RST) v2.0
