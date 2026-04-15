@@ -1,7 +1,7 @@
 tag: de
 version: 1.0
 isReferenceLGR: true
-permittedVariantPolicies: ["allblockvar"]
+permittedVariantPolicies: ["mayallocatevar","allblockvar"]
 eppSafeCodePoints:
   - U+0070
   - U+00DF
